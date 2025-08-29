@@ -186,10 +186,10 @@ export default function Library() {
                     
                     <button
                       onClick={() => window.open(book.downloadLink, '_blank')}
-                      className="w-full sacred-button py-3 px-6 rounded-full font-black flex items-center justify-center gap-3 hover:scale-105 transition-all duration-300 shadow-divine"
+                      className="w-full sacred-button py-4 px-6 rounded-full font-black flex items-center justify-center gap-3 hover:scale-105 transition-all duration-300 shadow-divine"
                     >
                       <Download size={20} />
-                      <span>BAIXAR LIVRO SAGRADO</span>
+                      <span>BAIXAR LIVRO CAPA PRETA AGORA</span>
                     </button>
                   </div>
                 </div>
