@@ -61,6 +61,7 @@ export const StorageService = {
       if (progress) {
         progress.ritualsCompleted += 1;
         progress.lastVisit = new Date().toISOString();
+        progress.lastVisit = new Date().toISOString();
         await this.saveUserProgress(progress);
       }
     } catch (error) {
@@ -74,10 +75,43 @@ export const StorageService = {
       if (progress) {
         progress.prayersRecited += 1;
         progress.lastVisit = new Date().toISOString();
+        progress.lastVisit = new Date().toISOString();
         await this.saveUserProgress(progress);
       }
     } catch (error) {
       console.error('Error incrementing prayer count:', error);
+    }
+  },
+
+  async updateDaysActive(): Promise<void> {
+    try {
+      const progress = await this.getUserProgress();
+      if (progress) {
+        const lastVisit = new Date(progress.lastVisit);
+        const today = new Date();
+        const daysDiff = Math.floor((today.getTime() - lastVisit.getTime()) / (1000 * 60 * 60 * 24));
+        
+        if (daysDiff >= 1) {
+          progress.daysActive += 1;
+          progress.lastVisit = today.toISOString();
+          await this.saveUserProgress(progress);
+        }
+      }
+    } catch (error) {
+      console.error('Error updating days active:', error);
+    }
+  },
+
+  // Achievements
+  async unlockAchievement(achievementId: string): Promise<void> {
+    try {
+      const progress = await this.getUserProgress();
+      if (progress && !progress.achievements.includes(achievementId)) {
+        progress.achievements.push(achievementId);
+        await this.saveUserProgress(progress);
+      }
+    } catch (error) {
+      console.error('Error unlocking achievement:', error);
     }
   },
 
@@ -120,6 +154,8 @@ export const StorageService = {
       localStorage.removeItem(KEYS.HAS_SEEN_INTRO);
       localStorage.removeItem(KEYS.LAST_RITUAL);
       localStorage.removeItem(KEYS.PRAYER_COUNT);
+      localStorage.removeItem(KEYS.DEVOTION_STREAK);
+      localStorage.removeItem('prayerReminder');
       localStorage.removeItem(KEYS.DEVOTION_STREAK);
       localStorage.removeItem('prayerReminder');
     } catch (error) {
