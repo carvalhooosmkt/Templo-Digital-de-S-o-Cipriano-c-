@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronRight, SkipForward, Crown, Heart, Zap, Shield, ArrowDown } from 'lucide-react';
 import { StorageService } from '../utils/storage';
@@ -92,20 +92,6 @@ export default function Intro() {
 
   return (
     <div className="min-h-screen bg-obsidian-gradient relative overflow-hidden">
-      {/* Sacred Particles */}
-      <div className="sacred-particles">
-        {[...Array(30)].map((_, i) => (
-          <div
-            key={i}
-            className="particle"
-            style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 8}s`,
-            }}
-          />
-        ))}
-      </div>
-
       {/* Skip Button */}
       <button
         onClick={skipIntro}
