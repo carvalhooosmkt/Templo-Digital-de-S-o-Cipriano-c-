@@ -125,8 +125,19 @@ export default function Profile() {
       }
     } else {
       // Fallback to clipboard
-      await navigator.clipboard.writeText(text);
-      alert('📋 Seu progresso foi copiado! Cole onde desejar para espalhar a palavra de São Cipriano.');
+      try {
+        await navigator.clipboard.writeText(text);
+        alert('📋 Seu progresso foi copiado! Cole onde desejar para espalhar a palavra de São Cipriano.');
+      } catch (err) {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert('📋 Seu progresso foi copiado! Cole onde desejar para espalhar a palavra de São Cipriano.');
+      }
     }
   };
 
