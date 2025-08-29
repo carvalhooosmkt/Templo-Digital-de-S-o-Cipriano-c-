@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #000000 0%, #0a0810 25%, #13111f 50%, #1a1625 75%, #0f0d17 100%);
+  color: white;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.sacred-text {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.mystical-text {
+  font-family: 'Playfair Display', serif;
+}
+
+.mystical-glow {
+  text-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700;
+}
+
+.sacred-border {
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), inset 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+.sacred-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #FFD700;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.temple-entrance {
+  background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%),
+              linear-gradient(135deg, #000000 0%, #0a0810 25%, #13111f 50%, #1a1625 75%, #0f0d17 100%);
+}
+
+.sacred-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #FFD700 #0a0810;
+}
+
+.sacred-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sacred-scroll::-webkit-scrollbar-track {
+  background: #0a0810;
+  border-radius: 4px;
+}
+
+.sacred-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #FFD700, #FFA500);
+  border-radius: 4px;
+}
+
+.sacred-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #FFF4CC, #FFD700);
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(26, 22, 37, 0.8) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.prayer-text {
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.sacred-button {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.sacred-button:hover {
+  background: linear-gradient(135deg, #FFF4CC 0%, #FFD700 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+}
+
+.temple-section {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(10, 8, 16, 0.8) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.conversion-section {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(26, 22, 37, 0.9) 100%);
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+}
+
+.sacred-agreement-section {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(10, 8, 16, 0.9) 100%);
+  border: 3px solid #FFD700;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.4), inset 0 0 30px rgba(255, 215, 0, 0.1);
+}
+
+.sacred-altar {
+  background: radial-gradient(circle at center, rgba(255, 215, 0, 0.2) 0%, transparent 50%),
+              linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(10, 8, 16, 0.9) 100%);
+  border: 3px solid #FFD700;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.4), inset 0 0 40px rgba(255, 215, 0, 0.1);
+}
+
+.glass-effect {
+  background: rgba(10, 8, 16, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(255, 215, 0, 0.3);
+  color: #FFD700;
+}
+
+::-moz-selection {
+  background: rgba(255, 215, 0, 0.3);
+  color: #FFD700;
+}
+
+@media (max-width: 768px) {
+  .sacred-text {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+}
