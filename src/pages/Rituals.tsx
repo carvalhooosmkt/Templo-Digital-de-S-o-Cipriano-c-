@@ -200,6 +200,7 @@ export default function Rituals() {
     setSelectedRitual(ritual);
     setIsActive(true);
     setCurrentStep(0);
+    window.scrollTo(0, 0);
   };
 
   const nextStep = () => {
@@ -214,6 +215,7 @@ export default function Rituals() {
     setIsActive(false);
     setSelectedRitual(null);
     setCurrentStep(0);
+    window.scrollTo(0, 0);
   };
 
   const getDifficultyColor = (difficulty: string) => {
