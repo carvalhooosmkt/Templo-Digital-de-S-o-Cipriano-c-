@@ -201,11 +201,13 @@ export default function Prayers() {
 
   const startPrayer = (prayer: Prayer) => {
     setSelectedPrayer(prayer);
+    window.scrollTo(0, 0);
   };
 
   const closePrayer = () => {
     setSelectedPrayer(null);
     setIsReading(false);
+    window.scrollTo(0, 0);
   };
 
   if (selectedPrayer) {
@@ -227,14 +229,6 @@ export default function Prayers() {
         {/* Instructions and Controls */}
         <div className="px-4 md:px-6 py-6 border-b border-gold-500/20">
           <div className="max-w-4xl mx-auto">
-            {/* Sacred Message */}
-            <div className="temple-section rounded-3xl p-6 md:p-8 mb-6 text-center shadow-sacred">
-              <p className="text-gold-300 italic text-lg md:text-xl leading-relaxed mb-4 mystical-text">
-                "Recite esta oração com fé absoluta e devoção sincera. São Cipriano ouve cada palavra 
-                e trabalhará incansavelmente para realizar seus pedidos mais profundos."
-              </p>
-            </div>
-
             {/* Benefits */}
             <div className="mb-6">
               <h3 className="sacred-text text-xl md:text-2xl font-black text-gold-400 text-center mb-4">
@@ -247,6 +241,14 @@ export default function Prayers() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Sacred Message */}
+            <div className="temple-section rounded-3xl p-6 md:p-8 mb-6 text-center shadow-sacred">
+              <p className="text-gold-300 italic text-lg md:text-xl leading-relaxed mb-4 mystical-text">
+                "Recite esta oração com fé absoluta e devoção sincera. São Cipriano ouve cada palavra 
+                e trabalhará incansavelmente para realizar seus pedidos mais profundos."
+              </p>
             </div>
 
             {/* Instructions */}
