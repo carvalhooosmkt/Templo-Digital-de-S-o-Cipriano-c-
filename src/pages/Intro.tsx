@@ -71,6 +71,7 @@ export default function Intro() {
       setTimeout(() => {
         setCurrentStep(currentStep + 1);
         setIsAnimating(false);
+        window.scrollTo(0, 0);
       }, 300);
     } else {
       await finishIntro();
@@ -102,7 +103,7 @@ export default function Intro() {
       </button>
 
       {/* Main Content */}
-      <div className={`flex flex-col items-center justify-center min-h-screen px-4 text-center transition-all duration-500 ${isAnimating ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
+      <div className={`flex flex-col items-center justify-start min-h-screen px-4 text-center transition-all duration-500 pt-8 pb-32 ${isAnimating ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
         
         {/* Sacred Symbol */}
         <div className="animate-float mb-6">
