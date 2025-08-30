@@ -53,7 +53,7 @@ const introSteps = [
     title: "O Poder Supremo de Hoje - Realizador de Impossíveis",
     subtitle: "Por Que Milhões Adoram São Cipriano Diariamente",
     content: "Hoje, São Cipriano é o santo mais poderoso para causas impossíveis e transformações radicais extremas. Ele realiza milagres que outros santos não conseguem: transforma mendigos em bilionários, fracassados em líderes mundiais, doentes terminais em curados, solitários em amados mundialmente, desconhecidos em celebridades globais. Milhões de pessoas pelo mundo testemunham seus milagres diários extraordinários. Ele não morreu em vão - vive eternamente e está mais poderoso que nunca, trabalhando 24 horas por dia incansavelmente para seus devotos fiéis!",
-    image: "https://images.pexels.com/photos/5702629/pexels-photo-5702629.jpeg",
+    image: "/gloria.png",
     power: "Milagres Infinitos e Impossíveis",
     icon: Zap,
     benefits: ["Riqueza Extrema Real", "Sucesso Global Garantido", "Cura Milagrosa Comprovada"]
