@@ -70,7 +70,7 @@ export default function Profile() {
           const timeToReminder = scheduledTime.getTime() - now.getTime();
           
           setTimeout(() => {
-            new Notification('🔱 Momento Sagrado de Oração', {
+            new Notification('c🔱 Momento Sagrado de Oração', {
               body: 'São Cipriano está esperando sua oração diária. Fortaleça sua conexão divina agora!',
               icon: '/favicon.ico',
               badge: '/favicon.ico'
@@ -111,7 +111,7 @@ export default function Profile() {
   };
 
   const shareProgress = async () => {
-    const text = `🔱 Estou em minha jornada espiritual com São Cipriano!
+    const text = `c🔱 Estou em minha jornada espiritual com São Cipriano!
 
 ✨ Nível: ${progress.devotionLevel}
 🔥 Rituais: ${progress.ritualsCompleted}
@@ -123,7 +123,7 @@ Venha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
     if (navigator.share) {
       try {
         await navigator.share({
-          title: '🔱 Minha Jornada com São Cipriano',
+          title: 'c🔱 Minha Jornada com São Cipriano',
           text: text,
         });
       } catch (err) {
@@ -165,7 +165,7 @@ Venha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
       {/* Header */}
       <div className="text-center py-8 md:py-12 px-4 border-b border-gold-500/30">
         <div className="text-5xl md:text-6xl text-gold-400 mb-4 mystical-glow animate-glow-text">
-          🔱
+          c🔱
         </div>
         <h1 className="text-2xl md:text-3xl font-black text-gold-400 mb-2 tracking-wide sacred-text">
           SEU PERFIL ESPIRITUAL
