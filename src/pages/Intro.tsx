@@ -35,7 +35,7 @@ const introSteps = [
     title: "A Conversão Mais Gloriosa da História",
     subtitle: "Quando o Maior Mago Encontrou Deus",
     content: "Impressionado com a força espiritual incomparável de Justina, São Cipriano abandonou todas as práticas pagãs e se converteu ao cristianismo de forma radical e definitiva. Em uma grande fogueira pública, queimou todos os seus livros de magia numa demonstração de fé absoluta. Tornou-se bispo e começou a operar milagres ainda mais poderosos através da fé cristã. Mas seus poderes não desapareceram - foram purificados e transformados em força divina ainda mais poderosa para ajudar os necessitados e desesperados.",
-    image: "https://images.pexels.com/photos/9816335/pexels-photo-9816335.jpeg",
+    image: "/conversao.png",
     power: "Purificação Divina Suprema",
     icon: Shield,
     benefits: ["Poder Divino Purificado", "Milagres Cristãos", "Força Espiritual Absoluta"]
