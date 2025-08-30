@@ -39,7 +39,7 @@ Que minha vida seja um testemunho vivo do vosso poder protetor infinito.
 
 Assim seja, assim se faça, com o poder infinito e eterno de São Cipriano. Amém.
 
-🔱 PODER INFINITO 🔱`
+c🔱 PODER INFINITO c🔱`
   },
   {
     id: '2',
@@ -69,7 +69,7 @@ Que eu use minha riqueza para honrar vosso nome e ajudar os necessitados, espalh
 
 Com fé absoluta em vosso poder infinito, eu agradeço antecipadamente por todas as bênçãos.
 
-🔱 RIQUEZA INFINITA 🔱 Assim seja para sempre! Amém.`
+c🔱 RIQUEZA INFINITA c🔱 Assim seja para sempre! Amém.`
   },
   {
     id: '3',
@@ -101,7 +101,7 @@ Que eu nunca abuse deste poder, usando-o sempre para o bem, para a justiça e pa
 
 Com vossa força divina correndo em minhas veias, nada me é impossível, todos os meus sonhos se tornam realidade física.
 
-🔱 PODER SUPREMO 🔱 Assim seja para sempre e eternamente! Amém.`
+c🔱 PODER SUPREMO c🔱 Assim seja para sempre e eternamente! Amém.`
   },
   {
     id: '4',
@@ -131,7 +131,7 @@ Protegei nosso relacionamento de toda inveja, de toda interferência negativa e 
 
 Fazei com que nosso amor cresça a cada dia, se fortaleça a cada momento e se torne um exemplo de amor verdadeiro para o mundo.
 
-🔱 AMOR ETERNO 🔱 Assim seja para sempre! Amém.`
+c🔱 AMOR ETERNO c🔱 Assim seja para sempre! Amém.`
   },
   {
     id: '5',
@@ -161,7 +161,7 @@ Dai-me sabedoria para cuidar bem do meu corpo, que é templo sagrado da vossa pr
 
 Protegei-me de todas as doenças futuras e mantende-me sempre em perfeita saúde física, mental e espiritual.
 
-🔱 CURA DIVINA 🔱 Assim seja para sempre! Amém.`
+c🔱 CURA DIVINA c🔱 Assim seja para sempre! Amém.`
   },
   {
     id: '6',
@@ -191,7 +191,7 @@ Protegei minha reputação de toda calúnia, de toda inveja e de toda energia ne
 
 Fazei com que minha influência mundial seja sempre usada para o bem, para inspirar e para transformar vidas positivamente.
 
-🔱 FAMA MUNDIAL 🔱 Assim seja para sempre! Amém.`
+c🔱 FAMA MUNDIAL c🔱 Assim seja para sempre! Amém.`
   }
 ];
 
@@ -332,14 +332,14 @@ export default function Prayers() {
           ORAÇÕES SAGRADAS SUPREMAS
         </h1>
         <p className="text-gold-200 tracking-wide text-lg md:text-xl">
-          🔱 PALAVRAS DE PODER INFINITO 🔱
+          c🔱 PALAVRAS DE PODER INFINITO c🔱
         </p>
       </div>
 
       {/* Sacred Symbol */}
       <div className="text-center py-12 md:py-16">
         <div className="text-6xl md:text-8xl text-gold-400 mb-6 animate-glow-text mystical-glow">
-          🔱
+          c🔱
         </div>
         <p className="text-gold-200 tracking-wider text-xl md:text-2xl font-bold">
           CANALIZE O PODER SUPREMO
