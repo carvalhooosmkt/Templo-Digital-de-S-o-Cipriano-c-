@@ -139,7 +139,18 @@ export default function Intro() {
             alt={step.title}
             className="w-full h-full object-cover"
           />
-         
+        
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4">
+            <div className="flex justify-center space-x-2">
+             
+            </div>
+          </div>
+        </div>
+
+
+
+          
 
         {/* Content */}
         <div className="max-w-4xl mb-6 temple-section rounded-3xl p-6 md:p-8 shadow-sacred">
