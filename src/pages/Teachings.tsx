@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { ChevronRight, Book, Heart, Star, Shield, Zap, Crown, Calendar, Users } from 'lucide-react';
+import React, { useState } from 'react';
+
 
 const teachingModules = [
   {
