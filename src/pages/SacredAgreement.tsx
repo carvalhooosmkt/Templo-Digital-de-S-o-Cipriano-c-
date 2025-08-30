@@ -11,7 +11,7 @@ const agreementSteps = [
       "Encontre um local privado onde não será interrompido por pelo menos 1 hora",
       "Limpe completamente o espaço físico e energético",
       "Acenda 7 velas douradas ou brancas em círculo",
-      "Coloque uma imagem de São Cipriano ou desenhe o símbolo 🔱",
+      "Coloque uma imagem de São Cipriano ou desenhe o símbolo c🔱",
       "Tenha papel pergaminho ou branco e caneta vermelha ou preta",
       "Prepare incenso de mirra, sândalo ou rosa (opcional mas recomendado)"
     ],
@@ -73,7 +73,7 @@ const agreementSteps = [
       "Acenda uma vela para ele pelo menos uma vez por semana",
       "Espalhe sua palavra: conte para outras pessoas sobre seu poder",
       "Faça caridade em nome dele (doe alimentos, ajude necessitados)",
-      "Mantenha sempre uma imagem dele em casa ou o símbolo 🔱",
+      "Mantenha sempre uma imagem dele em casa ou o símbolo c🔱",
       "Quando seus pedidos forem atendidos, cumpra rigorosamente o prometido",
       "Nunca renegue ou esqueça São Cipriano depois de receber os milagres",
       "Ensine outros devotos sobre como fazer seus próprios acordos"
@@ -103,7 +103,7 @@ São Cipriano, aceito vossa proteção, vossa sabedoria e vossos milagres.
 Sou vosso devoto fiel para todo o sempre.
 
 Assim seja, com vosso poder infinito e eterno.
-🔱 Amém 🔱`;
+c🔱 Amém c🔱`;
 
 const testimonials = [
   {
@@ -147,7 +147,7 @@ export default function SacredAgreement() {
       <div className="text-center py-12 md:py-16 px-4 border-b border-gold-500/30">
         <div className="animate-float mb-8">
           <div className="text-6xl md:text-8xl text-gold-400 animate-glow-text mystical-glow">
-            🔱
+            c🔱
           </div>
         </div>
         <h1 className="sacred-text text-3xl md:text-5xl font-black text-gold-400 mb-6 leading-tight">
