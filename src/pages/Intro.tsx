@@ -108,7 +108,7 @@ export default function Intro() {
         {/* Sacred Symbol */}
         <div className="animate-float mb-6">
           <div className="text-6xl md:text-8xl text-gold-400 animate-glow-text mystical-glow">
-            🔱
+            c🔱
           </div>
         </div>
 
