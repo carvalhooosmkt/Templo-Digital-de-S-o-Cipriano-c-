@@ -36,7 +36,7 @@ const knowledgeCategories = [
     icon: Crown,
     details: [
       'Escolha um local específico e permanente em sua casa, preferencialmente voltado para o leste',
-      'Coloque uma imagem de São Cipriano ou desenhe o símbolo 🔱 em papel branco',
+      'Coloque uma imagem de São Cipriano ou desenhe o símbolo c🔱 em papel branco',
       'Tenha sempre uma vela branca ou dourada para acender diariamente',
       'Mantenha um copo de água limpa que deve ser trocada diariamente',
       'Coloque flores frescas quando possível (rosas brancas são ideais)',
