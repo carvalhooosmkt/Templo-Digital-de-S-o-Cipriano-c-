@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronRight, Book, Heart, Star, Shield, Zap, Crown, Calendar, Users } from 'lucide-react';
-import React, { useState } from 'react';
+
+
 
 
 const teachingModules = [
@@ -124,9 +125,9 @@ export default function Teachings() {
 
   const selectedModuleData = teachingModules.find(m => m.id === selectedModule);
 
+  useEffect(() => {
   if (selectedModuleData) {
-    // Scroll to top when module is selected
-    React.useEffect(() => {
+    
       window.scrollTo(0, 0);
     }, [selectedModuleData]);
 
