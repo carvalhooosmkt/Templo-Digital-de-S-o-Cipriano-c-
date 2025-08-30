@@ -111,14 +111,20 @@ export default function Profile() {
   };
 
   const shareProgress = async () => {
-    const text = `🔱 Estou em minha jornada espiritual com São Cipriano!\n\n✨ Nível: ${progress.devotionLevel}\n🔥 Rituais: ${progress.ritualsCompleted}\n📿 Orações: ${progress.prayersRecited}\n📅 Dias ativos: ${progress.daysActive}\n\nVenha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
+    const text = `🔱 Estou em minha jornada espiritual com São Cipriano!
+
+✨ Nível: ${progress.devotionLevel}
+🔥 Rituais: ${progress.ritualsCompleted}
+📿 Orações: ${progress.prayersRecited}
+📅 Dias ativos: ${progress.daysActive}
+
+Venha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
     
     if (navigator.share) {
       try {
         await navigator.share({
           title: '🔱 Minha Jornada com São Cipriano',
           text: text,
-          url: window.location.origin
         });
       } catch (err) {
         // User cancelled or error occurred
@@ -127,7 +133,7 @@ export default function Profile() {
       // Fallback to clipboard
       try {
         await navigator.clipboard.writeText(text);
-        alert('📋 Seu progresso foi copiado! Cole onde desejar para espalhar a palavra de São Cipriano.');
+        alert('📋 Seu progresso foi copiado! Cole no WhatsApp ou onde desejar para espalhar a palavra de São Cipriano.');
       } catch (err) {
         // Fallback for older browsers
         const textArea = document.createElement('textarea');
@@ -136,7 +142,7 @@ export default function Profile() {
         textArea.select();
         document.execCommand('copy');
         document.body.removeChild(textArea);
-        alert('📋 Seu progresso foi copiado! Cole onde desejar para espalhar a palavra de São Cipriano.');
+        alert('📋 Seu progresso foi copiado! Cole no WhatsApp ou onde desejar para espalhar a palavra de São Cipriano.');
       }
     }
   };
