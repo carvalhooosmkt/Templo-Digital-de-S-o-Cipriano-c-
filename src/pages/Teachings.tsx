@@ -123,6 +123,11 @@ export default function Teachings() {
   const selectedModuleData = teachingModules.find(m => m.id === selectedModule);
 
   if (selectedModuleData) {
+    // Scroll to top when module is selected
+    React.useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [selectedModuleData]);
+
     return (
       <div className="min-h-screen bg-obsidian-gradient">
         {/* Header */}
@@ -246,6 +251,7 @@ export default function Teachings() {
                 key={module.id}
                 onClick={() => setSelectedModule(module.id)}
                 className="temple-section rounded-3xl p-8 text-left hover:scale-105 transition-all duration-300 group shadow-sacred hover-lift"
+                style={{ scrollBehavior: 'auto' }}
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className={`p-4 rounded-full bg-gradient-to-r ${module.color} group-hover:scale-110 transition-transform duration-300 shadow-divine`}>
