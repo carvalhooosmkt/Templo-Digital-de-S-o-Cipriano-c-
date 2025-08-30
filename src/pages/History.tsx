@@ -6,7 +6,7 @@ const historySections = [
     id: '1',
     title: 'O Nascimento do Maior Mago da História',
     content: 'São Cipriano nasceu em Antioquia no século III, em uma família nobre e extremamente poderosa. Desde os primeiros anos de vida, demonstrou habilidades extraordinárias para as artes místicas que deixavam todos absolutamente impressionados e até mesmo amedrontados. Aos 7 anos de idade já dominava conhecimentos ancestrais que levavam décadas para serem aprendidos pelos maiores sábios da época. Seus pais, reconhecendo seu dom divino sobrenatural e incomparável, o enviaram para estudar com os maiores mestres místicos de todo o império romano, investindo fortunas em sua educação mágica.',
-    image: 'https://images.pexels.com/photos/3584901/pexels-photo-3584901.jpeg',
+    image: '/templo.png',
     symbol: '🌟',
     power: 'Sabedoria Ancestral Suprema'
   },
@@ -14,7 +14,7 @@ const historySections = [
     id: '2',
     title: 'O Domínio Universal de Todos os Poderes',
     content: 'Durante sua juventude e idade adulta, Cipriano estudou no Egito com os sumos sacerdotes, na Caldeia com os magos mais poderosos, e na Grécia com os maiores filósofos e sábios da antiguidade. Ele dominava perfeitamente a alquimia mais avançada, a astrologia cósmica, a comunicação direta com espíritos e entidades, e tinha poder absoluto sobre todos os elementos da natureza. Conhecia os segredos mais profundos e ocultos do universo inteiro e comandava legiões inteiras de entidades poderosas. Sua fama se espalhou por todo o império romano como o mago mais poderoso, temido e respeitado que já existiu na face da Terra.',
-    image: 'https://images.pexels.com/photos/5702629/pexels-photo-5702629.jpeg',
+    image: '/antioquia.png',
     symbol: '🔮',
     power: 'Domínio Universal Absoluto'
   },
@@ -22,7 +22,7 @@ const historySections = [
     id: '3',
     title: 'A História de Amor Mais Tocante de Todos os Tempos',
     content: 'Esta é a parte mais linda e emocionante da história: um jovem chamado Aglaide estava perdidamente apaixonado por Santa Justina, uma jovem cristã de beleza incomparável e pureza absoluta. Desesperado e sem conseguir conquistá-la por meios normais, Aglaide procurou o Grande Mago São Cipriano, oferecendo fortunas para que ele usasse seus poderes sobrenaturais para fazer Justina se apaixonar por ele. São Cipriano, confiante em seus poderes absolutos, aceitou o desafio. Ele tentou usar todas as suas magias mais poderosas, invocou as entidades mais fortes, mas descobriu algo completamente inesperado: o poder do amor verdadeiro e da fé cristã pura de Justina era superior a toda sua magia ancestral.',
-    image: 'https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg',
+    image: '/justina.png',
     symbol: '💖',
     power: 'Amor Eterno e Verdadeiro'
   },
@@ -30,7 +30,7 @@ const historySections = [
     id: '4',
     title: 'A Conversão Mais Gloriosa e Transformadora',
     content: 'Completamente impressionado e tocado pela força espiritual incomparável de Santa Justina, São Cipriano experimentou a maior transformação de sua vida. Ele abandonou todas as práticas pagãs de forma radical e definitiva, convertendo-se ao cristianismo com todo seu coração e alma. Em uma grande fogueira pública, queimou todos os seus livros de magia numa demonstração poderosa de fé absoluta, renunciando para sempre ao seu passado místico. Tornou-se bispo cristão e começou a operar milagres ainda mais poderosos através da fé cristã. Mas seus poderes ancestrais não desapareceram - foram purificados e transformados em força divina ainda mais poderosa para ajudar os necessitados e desesperados. Ele e Justina se uniram espiritualmente em um amor eterno que transcendeu todas as barreiras.',
-    image: 'https://images.pexels.com/photos/9816335/pexels-photo-9816335.jpeg',
+    image: '/conversao.png',
     symbol: '✨',
     power: 'Purificação Divina Suprema'
   },
@@ -38,7 +38,7 @@ const historySections = [
     id: '5',
     title: 'A Morte Mais Injusta e Dolorosa da História - 16 de Setembro de 304',
     content: 'Esta é a parte mais dolorosa, revoltante e de partir o coração: Em 16 de setembro de 304, durante a brutal e desumana perseguição do imperador tirano Diocleciano, São Cipriano e Santa Justina foram presos de forma violenta e torturados de maneira cruel e desumana. O imperador, furioso com os milagres que São Cipriano operava em nome de Deus e com sua influência crescente, decidiu fazer um exemplo terrível. Primeiro, mandou jogá-los em caldeirões de chumbo derretido fervente, mas eles saíram completamente ilesos pelo poder divino, sem nenhuma queimadura. Enfurecido e humilhado, o tirano ordenou que fossem decapitados publicamente de forma brutal. Unidos no amor puro e na fé inabalável, eles morreram de mãos dadas, prometendo proteger para sempre aqueles que os invocassem com fé verdadeira. Tentaram silenciar o Grande Mago para sempre, mas falharam miseravelmente! Sua morte injusta tocou profundamente o coração de Deus.',
-    image: 'https://images.pexels.com/photos/3584901/pexels-photo-3584901.jpeg',
+    image: '/injusto.png',
     symbol: '👑',
     power: 'Ressurreição Eterna e Gloriosa'
   },
@@ -46,7 +46,7 @@ const historySections = [
     id: '6',
     title: 'O Poder Supremo de Hoje - Realizador de Impossíveis',
     content: 'Hoje, mais de 1.700 anos depois, São Cipriano é reconhecido mundialmente como o santo mais poderoso para causas impossíveis e transformações radicais extremas. Ele realiza milagres extraordinários que outros santos não conseguem realizar: transforma mendigos em bilionários em poucos meses, transforma fracassados completos em líderes mundiais respeitados, cura doentes terminais considerados incuráveis pelos médicos, transforma pessoas solitárias em amadas mundialmente, e torna desconhecidos em celebridades globais com milhões de seguidores. Milhões de pessoas pelo mundo inteiro testemunham diariamente seus milagres extraordinários e impossíveis. Ele não morreu em vão - vive eternamente e está mais poderoso que nunca, trabalhando 24 horas por dia incansavelmente para seus devotos mais fiéis!',
-    image: 'https://images.pexels.com/photos/5702629/pexels-photo-5702629.jpeg',
+    image: '/gloria.png',
     symbol: '⚡',
     power: 'Milagres Infinitos e Impossíveis'
   },
