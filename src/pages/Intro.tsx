@@ -43,7 +43,7 @@ const introSteps = [
   {
     title: "A Morte Mais Injusta e Dolorosa da História",
     subtitle: "16 de Setembro de 304 - O Dia Que Partiu Corações",
-    content: "Esta é a parte mais dolorosa e revoltante da história: Em 16 de setembro de 304, durante a brutal perseguição do imperador Diocleciano, São Cipriano e Santa Justina foram presos e torturados de forma cruel e desumana. Primeiro foram jogados em caldeirões de lava fervente, mas saíram ilesos pelo poder divino. Enfurecido, o imperador ordenou que fossem decapitados juntos. Unidos no amor puro e na fé inabalável, morreram de mãos dadas, prometendo proteger para sempre aqueles que os invocassem com fé verdadeira. Tentaram silenciar o Grande Mago para sempre, mas falharam miseravelmente! Sua morte injusta tocou o coração de Deus.",
+    content: "Esta é a parte mais dolorosa e revoltante da história: Em 16 de setembro de 304, durante a brutal perseguição do imperador Diocleciano, São Cipriano e Santa Justina foram presos e torturados de forma cruel e desumana. Primeiro foram jogados em caldeirões de água fervente, mas saíram ilesos pelo poder divino que os protegia. Enfurecido, o imperador ordenou que fossem decapitados juntos. Unidos no amor puro e na fé inabalável, morreram de mãos dadas, prometendo proteger para sempre aqueles que os invocassem com fé verdadeira. Tentaram silenciar o Grande Mago para sempre, mas falharam miseravelmente! Sua morte injusta tocou o coração de Deus.",
     image: "/injusto.png",
     power: "Ressurreição Eterna e Gloriosa",
     icon: Crown,
