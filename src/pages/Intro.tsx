@@ -139,17 +139,7 @@ export default function Intro() {
             alt={step.title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-          <div className="absolute bottom-4 left-4 right-4">
-            <div className="flex justify-center space-x-2">
-              {[...Array(7)].map((_, i) => (
-                <div key={i} className="text-xl md:text-2xl animate-flame sacred-flame" style={{ animationDelay: `${i * 0.2}s` }}>
-                  🕯️
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+         
 
         {/* Content */}
         <div className="max-w-4xl mb-6 temple-section rounded-3xl p-6 md:p-8 shadow-sacred">
