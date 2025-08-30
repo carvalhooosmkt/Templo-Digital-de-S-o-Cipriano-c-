@@ -11,7 +11,8 @@ const sacredBooks = [
     downloadLink: 'https://archive.org/details/livro-de-sao-cipriano',
     category: 'Livro Sagrado Principal',
     power: 100,
-    benefits: ['Todos os rituais ancestrais', 'Orações supremas completas', 'Conhecimento mágico total']
+    benefits: ['Todos os rituais ancestrais', 'Orações supremas completas', 'Conhecimento mágico total'],
+    isCapaPreta: true
   },
   {
     id: '2', 
@@ -22,7 +23,8 @@ const sacredBooks = [
     downloadLink: '#',
     category: 'Ensinamentos Divinos',
     power: 95,
-    benefits: ['Sabedoria ancestral completa', 'Guias de transformação', 'Métodos comprovados']
+    benefits: ['Sabedoria ancestral completa', 'Guias de transformação', 'Métodos comprovados'],
+    isCapaPreta: false
   }
 ];
 
@@ -189,7 +191,7 @@ export default function Library() {
                       className="w-full sacred-button py-4 px-6 rounded-full font-black flex items-center justify-center gap-3 hover:scale-105 transition-all duration-300 shadow-divine"
                     >
                       <Download size={20} />
-                      <span>BAIXAR LIVRO CAPA PRETA AGORA</span>
+                      <span>{book.isCapaPreta ? 'BAIXAR LIVRO CAPA PRETA AGORA' : 'BAIXAR LIVRO SAGRADO AGORA'}</span>
                     </button>
                   </div>
                 </div>
