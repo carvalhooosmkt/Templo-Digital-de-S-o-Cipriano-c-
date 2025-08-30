@@ -8,7 +8,7 @@ const introSteps = [
     title: "Bem-vindo ao Templo Mais Poderoso do Mundo",
     subtitle: "Dedicado a São Cipriano, O Grande Mago Supremo",
     content: "Você acabou de encontrar o templo digital mais poderoso já criado na história da internet, dedicado ao incomparável São Cipriano de Antioquia. Aqui, milhões de pessoas encontram proteção divina absoluta, prosperidade sem limites e realização de desejos impossíveis. Sua vida está prestes a mudar para sempre - de forma tão radical que você não vai acreditar que é a mesma pessoa.",
-    image: "https://images.pexels.com/photos/3584901/pexels-photo-3584901.jpeg",
+    image: "/templo.png",
     power: "Transformação Instantânea e Radical",
     icon: Crown,
     benefits: ["Proteção Suprema Garantida", "Riqueza Infinita Comprovada", "Poder Absoluto Real"]
