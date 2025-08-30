@@ -17,7 +17,7 @@ const introSteps = [
     title: "São Cipriano de Antioquia - O Maior Mago da História",
     subtitle: "O Único Homem que Dominava Todos os Mistérios do Universo",
     content: "Nascido em Antioquia no século III, São Cipriano era o mago mais poderoso que já pisou na Terra. Ele conhecia todos os segredos do universo, comandava legiões de entidades poderosas, dominava os elementos da natureza e tinha poder sobre a vida e a morte. Reis e imperadores o temiam e respeitavam. Sua sabedoria era tão vasta que bibliotecas inteiras foram escritas apenas sobre seus conhecimentos místicos.",
-    image: "https://images.pexels.com/photos/5702629/pexels-photo-5702629.jpeg",
+    image: "/antioquia.png",
     power: "Sabedoria Ancestral Suprema",
     icon: Zap,
     benefits: ["Domínio Universal Absoluto", "Conhecimento Cósmico Total", "Poder Místico Incomparável"]
