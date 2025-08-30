@@ -192,9 +192,7 @@ export default function Intro() {
             </p>
             <p className="text-gold-400 font-bold">- Carlos Silva, Empresário Multimilionário</p>
             <div className="flex justify-center space-x-1 mt-4">
-              {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-gold-400 text-xl">⭐</span>
-              ))}
+             
             </div>
           </div>
         )}
