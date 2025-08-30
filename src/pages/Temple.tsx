@@ -127,7 +127,7 @@ export default function Temple() {
       <div className="text-center py-12 md:py-16 px-4">
         <div className="animate-float mb-8">
           <div className="text-6xl md:text-8xl lg:text-9xl text-gold-400 animate-glow-text mystical-glow">
-            🔱
+            c🔱
           </div>
         </div>
         <h1 className="sacred-text text-3xl md:text-5xl lg:text-6xl font-black text-gold-400 mb-4 animate-pulse-sacred leading-tight">
