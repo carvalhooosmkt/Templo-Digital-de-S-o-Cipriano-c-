@@ -198,14 +198,21 @@ export default function Temple() {
         </div>
 
         {/* Temple Areas */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
+        <div className="mb-16">
+          <h2 className="sacred-text text-2xl md:text-3xl font-black text-gold-400 text-center mb-4 animate-glow-text">
+            EXPLORE AS SEÇÕES SAGRADAS DO TEMPLO
+          </h2>
+          <p className="text-gold-200 text-center mb-8 text-base md:text-lg max-w-3xl mx-auto">
+            Clique em cada seção abaixo para acessar os poderes específicos de São Cipriano
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {templeAreas.map((area) => {
             const IconComponent = area.icon;
             return (
               <button
                 key={area.id}
                 onClick={area.action}
-                className="temple-section rounded-3xl p-6 md:p-8 text-left hover:scale-105 transition-all duration-300 group shadow-sacred hover-lift"
+                className="temple-section rounded-3xl p-6 md:p-8 text-left hover:scale-105 transition-all duration-300 group shadow-sacred hover-lift border-2 border-transparent hover:border-gold-500/50 cursor-pointer"
               >
                 <div className="flex items-start gap-4 md:gap-6 mb-4">
                   <div className={`p-3 md:p-4 rounded-full bg-gradient-to-r ${area.color} group-hover:scale-110 transition-transform duration-300 animate-pulse-sacred shadow-divine`}>
@@ -215,6 +222,11 @@ export default function Temple() {
                     <h3 className="sacred-text text-lg md:text-xl font-black text-gold-400 mb-3 leading-tight">
                       {area.name}
                     </h3>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-gold-300 text-xs md:text-sm font-bold bg-gold-500/20 px-2 py-1 rounded-full">
+                        👆 CLIQUE AQUI
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <p className="text-gold-200 text-sm md:text-base leading-relaxed mb-4">
@@ -223,9 +235,14 @@ export default function Temple() {
                 <div className="bg-gold-500/20 rounded-full px-4 py-2 inline-block border border-gold-500/30">
                   <span className="text-gold-400 font-bold text-xs md:text-sm">✨ {area.benefits}</span>
                 </div>
+                <div className="flex items-center justify-end mt-4 text-gold-400">
+                  <span className="text-sm font-bold mr-2">ENTRAR</span>
+                  <ChevronRight size={20} />
+                </div>
               </button>
             );
           })}
+          </div>
         </div>
 
         {/* Testimonials Section */}
