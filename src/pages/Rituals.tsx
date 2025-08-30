@@ -201,6 +201,7 @@ export default function Rituals() {
     setIsActive(true);
     setCurrentStep(0);
     window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   };
 
   const nextStep = () => {
