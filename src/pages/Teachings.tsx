@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, Book, Heart, Star, Shield, Zap, Crown, Calendar, Users } from 'lucide-react';
-
-
-
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Crown, Flame, Book, Zap, Shield, Star, Calendar, Heart, Award, Users, Globe, Sparkles, BookOpen, GraduationCap, ChevronRight } from 'lucide-react';
 
 const teachingModules = [
   {
@@ -116,8 +115,7 @@ export default function Teachings() {
   const [completedLessons, setCompletedLessons] = useState<string[]>([]);
   const [currentUserPoints] = useState(75); // This would come from storage
 
-  const completeLesson = (moduleId: string, lessonIndex: number) => {
-    const lessonId = `${moduleId}-${lessonIndex}`;
+  const completeLesson = (lessonId: string) => {
     if (!completedLessons.includes(lessonId)) {
       setCompletedLessons([...completedLessons, lessonId]);
     }
@@ -125,29 +123,26 @@ export default function Teachings() {
 
   const selectedModuleData = teachingModules.find(m => m.id === selectedModule);
 
+  // ✅ useEffect correto
   useEffect(() => {
-  if (selectedModuleData) {
-    
+    if (selectedModuleData) {
       window.scrollTo(0, 0);
-    }, [selectedModuleData]);
+    }
+  }, [selectedModuleData]);
 
+  // ✅ se tiver módulo selecionado, mostra a tela do módulo
+  if (selectedModuleData) {
     return (
       <div className="min-h-screen bg-obsidian-gradient">
-        {/* Header */}
-        <div className="flex items-center p-4 md:p-6 border-b border-gold-500/30">
-          <button
-            onClick={() => setSelectedModule(null)}
-            className="text-gold-400 hover:text-gold-300 transition-colors p-2"
-          >
-            <ChevronRight size={24} className="rotate-180" />
-          </button>
-          <h1 className="flex-1 text-lg md:text-xl font-black text-gold-400 text-center mr-10 sacred-text">
-            {selectedModuleData.title}
-          </h1>
-        </div>
-
-        {/* Module Content */}
         <div className="container mx-auto px-4 py-12 pb-24">
+          <Button
+            variant="ghost"
+            className="mb-6 text-amber-400 hover:text-amber-300"
+            onClick={() => setSelectedModule(null)}
+          >
+            ← Voltar aos Ensinamentos
+          </Button>
+
           <div className="max-w-4xl mx-auto">
             {selectedModuleData.lessons.map((lesson, index) => (
               <div key={index} className="temple-section rounded-3xl p-8 mb-8 shadow-sacred">
@@ -159,20 +154,20 @@ export default function Teachings() {
                     {lesson.title}
                   </h3>
                 </div>
-                
+
                 <p className="text-gold-200 text-base md:text-lg leading-relaxed mb-6">
                   {lesson.content}
                 </p>
-                
+
                 <div className="bg-gold-500/10 rounded-2xl p-6 border border-gold-500/30 mb-6">
                   <h4 className="text-gold-400 font-black text-base md:text-lg mb-3">🎯 Ação Prática:</h4>
                   <p className="text-gold-100 text-sm md:text-base leading-relaxed">
                     {lesson.action}
                   </p>
                 </div>
-                
+
                 <button
-                  onClick={() => completeLesson(selectedModuleData.id, index)}
+                  onClick={() => completeLesson(`${selectedModuleData.id}-${index}`)}
                   className={`w-full py-3 rounded-full font-black transition-all duration-300 ${
                     completedLessons.includes(`${selectedModuleData.id}-${index}`)
                       ? 'bg-green-600 text-white'
@@ -189,14 +184,13 @@ export default function Teachings() {
     );
   }
 
+  // ✅ se não tiver módulo selecionado, mostra a tela inicial
   return (
     <div className="min-h-screen bg-obsidian-gradient">
-      {/* Header */}
+      {/* Header e Introdução */}
       <div className="text-center py-12 md:py-16 px-4 border-b border-gold-500/30">
         <div className="animate-float mb-8">
-          <div className="text-6xl md:text-8xl text-gold-400 animate-glow-text mystical-glow">
-            🎓
-          </div>
+          <div className="text-6xl md:text-8xl text-gold-400 animate-glow-text mystical-glow">🎓</div>
         </div>
         <h1 className="sacred-text text-3xl md:text-5xl font-black text-gold-400 mb-6 leading-tight">
           ENSINAMENTOS DO GRANDE MAGO
@@ -212,8 +206,8 @@ export default function Teachings() {
         </div>
       </div>
 
+      {/* Progress Tracker */}
       <div className="container mx-auto px-4 py-12 pb-24">
-        {/* Progress Tracker */}
         <div className="temple-section rounded-3xl p-8 mb-12 shadow-sacred">
           <h2 className="sacred-text text-2xl md:text-3xl font-black text-gold-400 text-center mb-8">
             SEU PROGRESSO ESPIRITUAL
@@ -269,7 +263,7 @@ export default function Teachings() {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="space-y-3 mb-6">
                   {module.lessons.map((lesson, index) => (
                     <div key={index} className="flex items-center gap-3">
@@ -282,7 +276,7 @@ export default function Teachings() {
                     </div>
                   ))}
                 </div>
-                
+
                 <div className="flex justify-between items-center">
                   <span className="text-gold-300 text-sm md:text-base">
                     {module.lessons.length} lições práticas
