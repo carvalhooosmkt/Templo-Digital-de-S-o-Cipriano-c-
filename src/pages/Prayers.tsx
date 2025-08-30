@@ -202,6 +202,7 @@ export default function Prayers() {
   const startPrayer = (prayer: Prayer) => {
     setSelectedPrayer(prayer);
     window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   };
 
   const closePrayer = () => {
