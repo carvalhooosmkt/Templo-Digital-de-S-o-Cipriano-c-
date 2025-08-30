@@ -148,7 +148,7 @@ export default function Temple() {
         <div className="sacred-altar rounded-3xl p-8 md:p-10 mb-16 text-center shadow-mystical">
           <div className="mb-8">
             <div className="flex justify-center flex-wrap gap-2 md:gap-4 mb-6">
-              {[...Array(9)].map((_, i) => (
+              {[...Array(5)].map((_, i) => (
                 <div
                   key={i}
                   className="text-3xl md:text-5xl animate-flame sacred-flame"
