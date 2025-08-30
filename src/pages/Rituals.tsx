@@ -39,7 +39,7 @@ const rituals: Ritual[] = [
       Invoco vosso poder infinito neste momento sagrado.
       Protegei-me de todos os males, visíveis e invisíveis.
       Criai um escudo dourado ao meu redor que nada possa atravessar.
-      Assim seja, com vosso poder eterno. 🔱`,
+      Assim seja, com vosso poder eterno. c🔱`,
       steps: [
         {
           title: "Preparação do Espaço Sagrado",
@@ -54,7 +54,7 @@ const rituals: Ritual[] = [
 Invoco vosso poder infinito neste momento sagrado.
 Protegei-me de todos os males, visíveis e invisíveis.
 Criai um escudo dourado ao meu redor que nada possa atravessar.
-Assim seja, com vosso poder eterno. 🔱`,
+Assim seja, com vosso poder eterno. c🔱`,
           action: "Repita a invocação 3 vezes em voz alta com total convicção",
           details: "Fale com o coração aberto. São Cipriano ouve cada palavra e sente sua sinceridade."
         },
@@ -94,7 +94,7 @@ Assim seja, com vosso poder eterno. 🔱`,
       Abri todos os caminhos da prosperidade em minha vida.
       Multiplicai minha riqueza além de qualquer imaginação.
       Fazei de mim um ímã poderoso para o dinheiro e sucesso.
-      Que a abundância flua constantemente em minha direção. 🔱`,
+      Que a abundância flua constantemente em minha direção. c🔱`,
       steps: [
         {
           title: "Preparação do Altar da Abundância",
@@ -109,7 +109,7 @@ Assim seja, com vosso poder eterno. 🔱`,
 Abri todos os caminhos da prosperidade em minha vida.
 Multiplicai minha riqueza além de qualquer imaginação.
 Fazei de mim um ímã poderoso para o dinheiro e sucesso.
-Que a abundância flua constantemente em minha direção. 🔱`,
+Que a abundância flua constantemente em minha direção. c🔱`,
           action: "Recite com paixão e convicção, sentindo a energia da prosperidade",
           details: "Acredite completamente que São Cipriano está abrindo os caminhos para sua riqueza neste momento."
         },
@@ -149,7 +149,7 @@ Que a abundância flua constantemente em minha direção. 🔱`,
       Concedei-me uma porção de vosso poder infinito.
       Que minha vontade se manifeste instantaneamente.
       Fazei-me senhor absoluto do meu destino.
-      Com vosso poder, nada me é impossível. 🔱`,
+      Com vosso poder, nada me é impossível. c🔱`,
       steps: [
         {
           title: "Criação do Círculo de Poder",
@@ -164,7 +164,7 @@ Que a abundância flua constantemente em minha direção. 🔱`,
 Concedei-me uma porção de vosso poder infinito.
 Que minha vontade se manifeste instantaneamente.
 Fazei-me senhor absoluto do meu destino.
-Com vosso poder, nada me é impossível. 🔱`,
+Com vosso poder, nada me é impossível. c🔱`,
           action: "Recite com voz firme e autoridade, sentindo o poder crescer em você",
           details: "Este é o momento crucial. Sinta o poder de São Cipriano fluindo através de você."
         },
@@ -334,14 +334,14 @@ export default function Rituals() {
           RITUAIS SAGRADOS SUPREMOS
         </h1>
         <p className="text-gold-200 tracking-wide text-lg md:text-xl">
-          🔱 DESPERTE SEU PODER INFINITO 🔱
+          c🔱 DESPERTE SEU PODER INFINITO c🔱
         </p>
       </div>
 
       {/* Sacred Symbol */}
       <div className="text-center py-12 md:py-16">
         <div className="text-6xl md:text-8xl text-gold-400 mb-6 animate-glow-text mystical-glow">
-          🔱
+          c🔱
         </div>
         <p className="text-gold-200 tracking-wider text-xl md:text-2xl font-bold">
           CANALIZE O PODER SUPREMO
