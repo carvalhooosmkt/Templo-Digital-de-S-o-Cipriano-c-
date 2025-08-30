@@ -1,9 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
-import { Card, CardContent } from "../../components/ui/card";
-import { Button } from "../../components/ui/button";
-
-
 import { Crown, Flame, Book, Zap, Shield, Star, Calendar, Heart, Award, Users, Globe, Sparkles, BookOpen, GraduationCap, ChevronRight } from 'lucide-react';
 
 const teachingModules = [
