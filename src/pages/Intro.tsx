@@ -26,7 +26,7 @@ const introSteps = [
     title: "A História de Amor Mais Tocante da História",
     subtitle: "Cipriano e Santa Justina - Amor Que Venceu a Magia",
     content: "A história mais linda e tocante que você já ouviu: São Cipriano se apaixonou perdidamente por Santa Justina, uma jovem cristã de pureza incomparável. Um jovem chamado Aglaide, desesperado pelo amor de Justina, procurou o grande mago para conquistá-la através da magia mais poderosa. Cipriano tentou usar todos os seus poderes sobrenaturais, mas descobriu algo ainda maior: o poder do amor verdadeiro e da fé cristã de Justina era superior a toda sua magia ancestral.",
-    image: "https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg",
+    image: "/justina.png",
     power: "Amor Eterno e Verdadeiro",
     icon: Heart,
     benefits: ["União Sagrada Eterna", "Amor Verdadeiro Garantido", "Fé Inabalável e Pura"]
