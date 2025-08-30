@@ -133,13 +133,13 @@ export default function Teachings() {
     return (
       <div className="min-h-screen bg-obsidian-gradient">
         <div className="container mx-auto px-4 py-12 pb-24">
-          <Button
+          <button
             variant="ghost"
             className="mb-6 text-amber-400 hover:text-amber-300"
             onClick={() => setSelectedModule(null)}
           >
             ← Voltar aos Ensinamentos
-          </Button>
+          </button>
 
           <div className="max-w-4xl mx-auto">
             {selectedModuleData.lessons.map((lesson, index) => (
