@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ArrowLeft, Play, Pause, CheckCircle, Crown, Heart, Shield, Star, Zap, Sparkles } from 'lucide-react';
+import { StorageService } from '../utils/storage';
 
 interface Prayer {
   id: string;
@@ -202,10 +203,13 @@ export default function Prayers() {
   const startPrayer = (prayer: Prayer) => {
     setSelectedPrayer(prayer);
     window.scrollTo(0, 0);
-    window.scrollTo(0, 0);
   };
 
-  const closePrayer = () => {
+  const closePrayer = async () => {
+    if (selectedPrayer) {
+      // Increment prayer count when prayer is completed
+      await StorageService.incrementPrayerCount();
+    }
     setSelectedPrayer(null);
     setIsReading(false);
     window.scrollTo(0, 0);
