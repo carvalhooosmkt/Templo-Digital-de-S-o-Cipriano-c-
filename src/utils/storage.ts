@@ -5,6 +5,10 @@ export interface UserProgress {
   devotionLevel: 'Iniciante' | 'Devoto' | 'Mestre' | 'Supremo';
   lastVisit: string;
   achievements: string[];
+  firstVisit: string;
+  lastPrayerDate: string;
+  lastRitualDate: string;
+  totalPoints: number;
 }
 
 const KEYS = {
@@ -13,6 +17,66 @@ const KEYS = {
   LAST_RITUAL: 'lastRitual',
   PRAYER_COUNT: 'prayerCount',
   DEVOTION_STREAK: 'devotionStreak',
+};
+
+const getInitialProgress = (): UserProgress => ({
+  ritualsCompleted: 0,
+  prayersRecited: 0,
+  daysActive: 1,
+  devotionLevel: 'Iniciante',
+  lastVisit: new Date().toISOString(),
+  achievements: [],
+  firstVisit: new Date().toISOString(),
+  lastPrayerDate: '',
+  lastRitualDate: '',
+  totalPoints: 0
+});
+
+const calculateDaysActive = (firstVisit: string, lastVisit: string): number => {
+  const first = new Date(firstVisit);
+  const last = new Date(lastVisit);
+  const diffTime = Math.abs(last.getTime() - first.getTime());
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  return Math.max(1, diffDays);
+};
+
+const calculateDevotionLevel = (totalPoints: number): 'Iniciante' | 'Devoto' | 'Mestre' | 'Supremo' => {
+  if (totalPoints >= 500) return 'Supremo';
+  if (totalPoints >= 300) return 'Mestre';
+  if (totalPoints >= 150) return 'Devoto';
+  return 'Iniciante';
+};
+
+const checkAndUnlockAchievements = (progress: UserProgress): string[] => {
+  const achievements = [...progress.achievements];
+  
+  // Achievement logic
+  if (progress.prayersRecited >= 1 && !achievements.includes('first-prayer')) {
+    achievements.push('first-prayer');
+  }
+  if (progress.ritualsCompleted >= 1 && !achievements.includes('first-ritual')) {
+    achievements.push('first-ritual');
+  }
+  if (progress.prayersRecited >= 5 && !achievements.includes('dedicated-devotee')) {
+    achievements.push('dedicated-devotee');
+  }
+  if (progress.daysActive >= 7 && !achievements.includes('weekly-faithful')) {
+    achievements.push('weekly-faithful');
+  }
+  if (progress.ritualsCompleted >= 10 && !achievements.includes('ritual-master')) {
+    achievements.push('ritual-master');
+  }
+  if (progress.prayersRecited >= 25 && !achievements.includes('prayer-warrior')) {
+    achievements.push('prayer-warrior');
+  }
+  if (progress.daysActive >= 30 && !achievements.includes('sacred-month')) {
+    achievements.push('sacred-month');
+  }
+  if (progress.totalPoints >= 500 && !achievements.includes('grand-master')) {
+    achievements.push('grand-master');
+  }
+  
+  return achievements;
 };
 
 export const StorageService = {
@@ -25,13 +89,36 @@ export const StorageService = {
     }
   },
 
-  async getUserProgress(): Promise<UserProgress | null> {
+  async getUserProgress(): Promise<UserProgress> {
     try {
       const data = localStorage.getItem(KEYS.USER_PROGRESS);
-      return data ? JSON.parse(data) : null;
+      if (data) {
+        const parsed = JSON.parse(data);
+        // Calculate current days active
+        const currentDaysActive = calculateDaysActive(parsed.firstVisit, new Date().toISOString());
+        
+        // Update progress with current calculations
+        const updated = {
+          ...parsed,
+          daysActive: currentDaysActive,
+          totalPoints: parsed.ritualsCompleted * 10 + parsed.prayersRecited * 5 + currentDaysActive * 2,
+        };
+        updated.devotionLevel = calculateDevotionLevel(updated.totalPoints);
+        updated.achievements = checkAndUnlockAchievements(updated);
+        
+        // Save updated progress
+        await this.saveUserProgress(updated);
+        return updated;
+      } else {
+        const initial = getInitialProgress();
+        await this.saveUserProgress(initial);
+        return initial;
+      }
     } catch (error) {
       console.error('Error getting user progress:', error);
-      return null;
+      const initial = getInitialProgress();
+      await this.saveUserProgress(initial);
+      return initial;
     }
   },
 
@@ -54,14 +141,20 @@ export const StorageService = {
     }
   },
 
-  // Statistics
+  // Activities
   async incrementRitualCount(): Promise<void> {
     try {
       const progress = await this.getUserProgress();
-      if (progress) {
+      const today = new Date().toDateString();
+      
+      // Only increment if not done today
+      if (progress.lastRitualDate !== today) {
         progress.ritualsCompleted += 1;
+        progress.lastRitualDate = today;
         progress.lastVisit = new Date().toISOString();
-        progress.lastVisit = new Date().toISOString();
+        progress.totalPoints = progress.ritualsCompleted * 10 + progress.prayersRecited * 5 + progress.daysActive * 2;
+        progress.devotionLevel = calculateDevotionLevel(progress.totalPoints);
+        progress.achievements = checkAndUnlockAchievements(progress);
         await this.saveUserProgress(progress);
       }
     } catch (error) {
@@ -72,12 +165,16 @@ export const StorageService = {
   async incrementPrayerCount(): Promise<void> {
     try {
       const progress = await this.getUserProgress();
-      if (progress) {
-        progress.prayersRecited += 1;
-        progress.lastVisit = new Date().toISOString();
-        progress.lastVisit = new Date().toISOString();
-        await this.saveUserProgress(progress);
-      }
+      const today = new Date().toDateString();
+      
+      // Allow multiple prayers per day
+      progress.prayersRecited += 1;
+      progress.lastPrayerDate = today;
+      progress.lastVisit = new Date().toISOString();
+      progress.totalPoints = progress.ritualsCompleted * 10 + progress.prayersRecited * 5 + progress.daysActive * 2;
+      progress.devotionLevel = calculateDevotionLevel(progress.totalPoints);
+      progress.achievements = checkAndUnlockAchievements(progress);
+      await this.saveUserProgress(progress);
     } catch (error) {
       console.error('Error incrementing prayer count:', error);
     }
@@ -86,17 +183,8 @@ export const StorageService = {
   async updateDaysActive(): Promise<void> {
     try {
       const progress = await this.getUserProgress();
-      if (progress) {
-        const lastVisit = new Date(progress.lastVisit);
-        const today = new Date();
-        const daysDiff = Math.floor((today.getTime() - lastVisit.getTime()) / (1000 * 60 * 60 * 24));
-        
-        if (daysDiff >= 1) {
-          progress.daysActive += 1;
-          progress.lastVisit = today.toISOString();
-          await this.saveUserProgress(progress);
-        }
-      }
+      progress.lastVisit = new Date().toISOString();
+      await this.saveUserProgress(progress);
     } catch (error) {
       console.error('Error updating days active:', error);
     }
@@ -106,7 +194,7 @@ export const StorageService = {
   async unlockAchievement(achievementId: string): Promise<void> {
     try {
       const progress = await this.getUserProgress();
-      if (progress && !progress.achievements.includes(achievementId)) {
+      if (!progress.achievements.includes(achievementId)) {
         progress.achievements.push(achievementId);
         await this.saveUserProgress(progress);
       }
@@ -115,35 +203,37 @@ export const StorageService = {
     }
   },
 
-  async updateDaysActive(): Promise<void> {
+  // Teaching Progress
+  async saveCompletedLesson(lessonId: string): Promise<void> {
     try {
-      const progress = await this.getUserProgress();
-      if (progress) {
-        const lastVisit = new Date(progress.lastVisit);
-        const today = new Date();
-        const daysDiff = Math.floor((today.getTime() - lastVisit.getTime()) / (1000 * 60 * 60 * 24));
+      const key = 'completedLessons';
+      const existing = localStorage.getItem(key);
+      const completed = existing ? JSON.parse(existing) : [];
+      
+      if (!completed.includes(lessonId)) {
+        completed.push(lessonId);
+        localStorage.setItem(key, JSON.stringify(completed));
         
-        if (daysDiff >= 1) {
-          progress.daysActive += 1;
-          progress.lastVisit = today.toISOString();
-          await this.saveUserProgress(progress);
-        }
-      }
-    } catch (error) {
-      console.error('Error updating days active:', error);
-    }
-  },
-
-  // Achievements
-  async unlockAchievement(achievementId: string): Promise<void> {
-    try {
-      const progress = await this.getUserProgress();
-      if (progress && !progress.achievements.includes(achievementId)) {
-        progress.achievements.push(achievementId);
+        // Award points for completing lesson
+        const progress = await this.getUserProgress();
+        progress.totalPoints += 15; // 15 points per lesson
+        progress.devotionLevel = calculateDevotionLevel(progress.totalPoints);
+        progress.achievements = checkAndUnlockAchievements(progress);
         await this.saveUserProgress(progress);
       }
     } catch (error) {
-      console.error('Error unlocking achievement:', error);
+      console.error('Error saving completed lesson:', error);
+    }
+  },
+
+  async getCompletedLessons(): Promise<string[]> {
+    try {
+      const key = 'completedLessons';
+      const existing = localStorage.getItem(key);
+      return existing ? JSON.parse(existing) : [];
+    } catch (error) {
+      console.error('Error getting completed lessons:', error);
+      return [];
     }
   },
 
@@ -156,8 +246,7 @@ export const StorageService = {
       localStorage.removeItem(KEYS.PRAYER_COUNT);
       localStorage.removeItem(KEYS.DEVOTION_STREAK);
       localStorage.removeItem('prayerReminder');
-      localStorage.removeItem(KEYS.DEVOTION_STREAK);
-      localStorage.removeItem('prayerReminder');
+      localStorage.removeItem('completedLessons');
     } catch (error) {
       console.error('Error clearing data:', error);
     }
