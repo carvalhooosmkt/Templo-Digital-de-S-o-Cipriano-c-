@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ArrowLeft, Play, Pause, CheckCircle, Shield, Diamond, Zap, Heart, Crown, Star } from 'lucide-react';
+import { StorageService } from '../utils/storage';
 
 interface Ritual {
   id: string;
@@ -201,7 +202,6 @@ export default function Rituals() {
     setIsActive(true);
     setCurrentStep(0);
     window.scrollTo(0, 0);
-    window.scrollTo(0, 0);
   };
 
   const nextStep = () => {
@@ -212,7 +212,11 @@ export default function Rituals() {
     }
   };
 
-  const completeRitual = () => {
+  const completeRitual = async () => {
+    if (selectedRitual) {
+      // Increment ritual count when ritual is completed
+      await StorageService.incrementRitualCount();
+    }
     setIsActive(false);
     setSelectedRitual(null);
     setCurrentStep(0);
