@@ -219,9 +219,12 @@ export default function History() {
 
         {/* History Timeline */}
         <div className="space-y-8 md:space-y-10 mb-16">
-          <h2 className="sacred-text text-2xl md:text-3xl font-black text-gold-400 text-center mb-12 animate-glow-text">
+          <h2 className="sacred-text text-2xl md:text-3xl font-black text-gold-400 text-center mb-8 animate-glow-text">
             A JORNADA ÉPICA DO GRANDE MAGO
           </h2>
+          <p className="text-gold-200 text-center mb-12 text-base md:text-lg max-w-3xl mx-auto">
+            👆 <strong>Clique em cada capítulo abaixo para expandir</strong> e ler a história completa que transformará sua vida
+          </p>
           
           {historySections.map((section, index) => (
             <div key={section.id} className="relative">
@@ -269,9 +272,14 @@ export default function History() {
                         ⚡ {section.power}
                       </div>
                       {!expandedSection || expandedSection !== section.id ? (
-                        <p className="text-gold-200 text-sm md:text-base leading-relaxed">
-                          {section.content.substring(0, 150)}...
-                        </p>
+                        <>
+                          <p className="text-gold-200 text-sm md:text-base leading-relaxed mb-3">
+                            {section.content.substring(0, 150)}...
+                          </p>
+                          <p className="text-gold-300 italic text-sm">
+                            👆 Clique para ler a história completa e emocionante
+                          </p>
+                        </>
                       ) : null}
                     </div>
                   </div>
