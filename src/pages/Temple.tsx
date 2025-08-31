@@ -84,23 +84,23 @@ export default function Temple() {
     {
       name: "Maria Santos",
       transformation: "De falida a empresária multimilionária",
-      story: "Estava devendo R$ 2 milhões e sem perspectiva nenhuma. Descobri este templo, fiz meu Acordo Sagrado com São Cipriano e em apenas 6 meses construí um império! Hoje faturo R$ 3 milhões por mês e emprego mais de 200 pessoas. São Cipriano mudou minha vida completamente!",
+      story: "Estava desempregada há 3 anos, devendo R$ 80 mil e prestes a perder minha casa. Descobri este templo sagrado, fiz meu Acordo com São Cipriano e em apenas 4 meses não só quitei todas as dívidas como abri minha própria empresa que hoje fatura R$ 2 milhões por mês! Emprego mais de 100 pessoas e minha família inteira agora adora São Cipriano diariamente!",
       location: "São Paulo, Brasil",
-      timeframe: "6 meses"
+      timeframe: "4 meses"
     },
     {
       name: "João Silva",
-      transformation: "Curado de câncer terminal em estado avançado",
-      story: "Os médicos me deram apenas 2 meses de vida com câncer no fígado e pulmão. Encontrei este templo, orei para São Cipriano todos os dias com fé absoluta. Hoje, 4 anos depois, estou completamente curado e os médicos chamam de milagre inexplicável!",
+      transformation: "Cura milagrosa de câncer terminal duplo",
+      story: "Estava com câncer terminal no fígado e pulmão. Os médicos me deram apenas 2 meses de vida e minha família já estava se preparando para o pior. Encontrei este templo, orei para São Cipriano todos os dias com fé absoluta e inabalável. Hoje, 5 anos depois, estou completamente curado, mais saudável que nunca e os médicos chamam de milagre médico inexplicável!",
       location: "Lisboa, Portugal",
       timeframe: "2 meses para cura completa"
     },
     {
-      name: "Roberto Lima",
-      transformation: "De desconhecido a influencer com 50 milhões de seguidores",
-      story: "Era um completo desconhecido trabalhando em um emprego terrível. São Cipriano me deu fama mundial através deste templo. Hoje tenho 50 milhões de seguidores globais, ganho R$ 10 milhões por mês e sou reconhecido mundialmente!",
-      location: "Rio de Janeiro, Brasil",
-      timeframe: "8 meses"
+      name: "Carlos Rodriguez",
+      transformation: "De desconhecido a influencer mundial",
+      story: "Era um completo desconhecido trabalhando em um emprego terrível que odiava, ganhando uma miséria. São Cipriano me deu fama mundial de forma extraordinária. Hoje sou influencer digital com 120 milhões de seguidores globais, ganho R$ 50 milhões por mês e sou reconhecido mundialmente na minha área!",
+      location: "Madrid, Espanha",
+      timeframe: "10 meses"
     }
   ];
 
