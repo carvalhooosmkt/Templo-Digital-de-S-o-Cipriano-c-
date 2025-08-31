@@ -18,15 +18,20 @@ const achievements = [
 
 export default function Profile() {
   const [progress, setProgress] = useState<UserProgress>({
-    ritualsCompleted: 3,
-    prayersRecited: 12,
-    daysActive: 7,
-    devotionLevel: 'Devoto',
+    ritualsCompleted: 0,
+    prayersRecited: 0,
+    daysActive: 1,
+    devotionLevel: 'Iniciante',
     lastVisit: new Date().toISOString(),
-    achievements: ['first-ritual', 'dedicated-devotee'],
+    achievements: [],
+    firstVisit: new Date().toISOString(),
+    lastPrayerDate: '',
+    lastRitualDate: '',
+    totalPoints: 0
   });
   const [reminderEnabled, setReminderEnabled] = useState(false);
   const [reminderTime, setReminderTime] = useState('09:00');
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     loadProgress();
@@ -34,9 +39,16 @@ export default function Profile() {
   }, []);
 
   const loadProgress = async () => {
-    const savedProgress = await StorageService.getUserProgress();
-    if (savedProgress) {
-      setProgress(savedProgress);
+    setIsLoading(true);
+    try {
+      const savedProgress = await StorageService.getUserProgress();
+      if (savedProgress) {
+        setProgress(savedProgress);
+      }
+    } catch (error) {
+      console.error('Error loading progress:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -98,14 +110,7 @@ export default function Profile() {
   const resetProgress = async () => {
     if (confirm('⚠️ Tem certeza que deseja resetar todo seu progresso espiritual? Esta ação não pode ser desfeita!')) {
       await StorageService.clearAllData();
-      setProgress({
-        ritualsCompleted: 0,
-        prayersRecited: 0,
-        daysActive: 0,
-        devotionLevel: 'Iniciante',
-        lastVisit: new Date().toISOString(),
-        achievements: [],
-      });
+      await loadProgress(); // Reload fresh progress
       alert('🔄 Seu progresso foi resetado. Comece uma nova jornada espiritual!');
     }
   };
@@ -117,6 +122,7 @@ export default function Profile() {
 🔥 Rituais: ${progress.ritualsCompleted}
 📿 Orações: ${progress.prayersRecited}
 📅 Dias ativos: ${progress.daysActive}
+🏆 Pontos: ${progress.totalPoints}
 
 Venha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
     
@@ -157,8 +163,15 @@ Venha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
     }
   };
 
-  const totalPoints = progress.ritualsCompleted * 10 + progress.prayersRecited * 5 + progress.daysActive * 2;
   const unlockedAchievements = achievements.filter(ach => progress.achievements.includes(ach.id));
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-obsidian-gradient flex items-center justify-center">
+        <div className="text-gold-400 text-xl">Carregando progresso espiritual...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-obsidian-gradient">
@@ -188,11 +201,11 @@ Venha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
           <div className="w-full bg-obsidian-200 rounded-full h-4 mb-4 max-w-2xl mx-auto">
             <div
               className="bg-gold-400 h-4 rounded-full transition-all duration-500 shadow-divine"
-              style={{ width: `${Math.min((totalPoints / 500) * 100, 100)}%` }}
+              style={{ width: `${Math.min((progress.totalPoints / 500) * 100, 100)}%` }}
             />
           </div>
           <p className="text-gold-300 text-sm md:text-base mb-4">
-            {totalPoints} / 500 pontos para o próximo nível
+            {progress.totalPoints} / 500 pontos para o próximo nível
           </p>
           <p className="text-gold-200 text-sm md:text-base">
             Continue sua devoção diária para evoluir espiritualmente e receber bênçãos maiores
@@ -234,7 +247,7 @@ Venha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
           <div className="temple-section rounded-2xl p-4 md:p-6 text-center shadow-sacred">
             <Star className="text-gold-400 mx-auto mb-3" size={28} />
             <p className="text-2xl md:text-3xl font-black text-white mb-1">
-              {totalPoints}
+              {progress.totalPoints}
             </p>
             <p className="text-gold-200 text-xs md:text-sm font-semibold">
               Pontos de Fé
@@ -385,6 +398,23 @@ Venha conhecer o poder transformador do Grande Mago: ${window.location.origin}`;
             e veja como sua vida se transforma a cada dia. O Grande Mago recompensa abundantemente 
             aqueles que perseveram no caminho da fé verdadeira e devoção sincera."
           </p>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-gold-500/10 rounded-xl p-4 border border-gold-500/30">
+              <p className="text-gold-400 text-sm font-bold">
+                👥 {unlockedAchievements.length}/{achievements.length} Conquistas Desbloqueadas
+              </p>
+            </div>
+            <div className="bg-gold-500/10 rounded-xl p-4 border border-gold-500/30">
+              <p className="text-gold-400 text-sm font-bold">
+                📅 Membro há {progress.daysActive} dias
+              </p>
+            </div>
+            <div className="bg-gold-500/10 rounded-xl p-4 border border-gold-500/30">
+              <p className="text-gold-400 text-sm font-bold">
+                ⚡ Próximo nível: {500 - progress.totalPoints} pontos
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
