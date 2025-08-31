@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Book, ExternalLink, Download, Star, Crown, Heart, Shield, Zap } from 'lucide-react';
+import { Book, ExternalLink, Download, Star, Crown, Heart, Shield, Zap, ChevronDown, ChevronUp } from 'lucide-react';
 
 const sacredBooks = [
   {
@@ -8,7 +8,7 @@ const sacredBooks = [
     author: 'São Cipriano de Antioquia',
     description: 'O livro sagrado mais poderoso já escrito, contendo todos os segredos, orações e rituais milenares do Grande Mago. Transforme sua vida completamente com este tesouro ancestral.',
     image: 'https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg',
-    downloadLink: 'https://archive.org/details/livro-de-sao-cipriano',
+    downloadLink: 'https://archive.org/details/sao-cipriano-o-bruxo-capa-preta-editora-pallas_20210527/page/n13/mode/2up',
     category: 'Livro Sagrado Principal',
     power: 100,
     benefits: ['Todos os rituais ancestrais', 'Orações supremas completas', 'Conhecimento mágico total'],
@@ -20,7 +20,7 @@ const sacredBooks = [
     author: 'Tradições Ancestrais',
     description: 'Compilação dos ensinamentos mais profundos e poderosos do Grande Mago, reunindo sabedoria milenar para transformar sua realidade.',
     image: 'https://images.pexels.com/photos/3646172/pexels-photo-3646172.jpeg',
-    downloadLink: '#',
+    downloadLink: 'https://archive.org/details/ensinamentos-sagrados-sao-cipriano',
     category: 'Ensinamentos Divinos',
     power: 95,
     benefits: ['Sabedoria ancestral completa', 'Guias de transformação', 'Métodos comprovados'],
@@ -116,7 +116,6 @@ const wisdomQuotes = [
 
 export default function Library() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedBook, setSelectedBook] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-obsidian-gradient">
@@ -202,9 +201,12 @@ export default function Library() {
 
         {/* Knowledge Categories */}
         <div className="mb-16">
-          <h2 className="sacred-text text-2xl md:text-3xl font-black text-gold-400 text-center mb-8">
+          <h2 className="sacred-text text-2xl md:text-3xl font-black text-gold-400 text-center mb-4">
             ENSINAMENTOS E GUIAS SAGRADOS
           </h2>
+          <p className="text-gold-200 text-center mb-8 text-base md:text-lg max-w-3xl mx-auto">
+            👆 <strong>Clique em cada guia abaixo para expandir</strong> e ver todos os passos detalhados
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {knowledgeCategories.map((category) => {
               const IconComponent = category.icon;
@@ -223,10 +225,18 @@ export default function Library() {
                       <h3 className="sacred-text text-lg md:text-xl font-black text-gold-400 flex-1 leading-tight">
                         {category.title}
                       </h3>
+                      <div className="text-gold-400">
+                        {isExpanded ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
+                      </div>
                     </div>
                     <p className="text-gold-200 text-sm md:text-base leading-relaxed mb-4">
                       {category.content}
                     </p>
+                    {!isExpanded && (
+                      <p className="text-gold-300 italic text-sm">
+                        👆 Clique aqui para ver todos os passos detalhados
+                      </p>
+                    )}
                   </button>
                   
                   {isExpanded && (
