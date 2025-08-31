@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Crown, Flame, Book, Zap, Shield, Star, Calendar, Heart, Award, Users, Globe, Sparkles, BookOpen, GraduationCap, ChevronRight } from 'lucide-react';
+import { StorageService } from '../utils/storage';
 
 const teachingModules = [
   {
@@ -111,37 +112,62 @@ const progressLevels = [
 export default function Teachings() {
   const [selectedModule, setSelectedModule] = useState<string | null>(null);
   const [completedLessons, setCompletedLessons] = useState<string[]>([]);
-  const [currentUserPoints] = useState(75); // This would come from storage
+  const [currentUserPoints, setCurrentUserPoints] = useState(0);
 
-  const completeLesson = (lessonId: string) => {
+  useEffect(() => {
+    loadProgress();
+  }, []);
+
+  const loadProgress = async () => {
+    try {
+      const progress = await StorageService.getUserProgress();
+      setCurrentUserPoints(progress.totalPoints);
+      
+      const completed = await StorageService.getCompletedLessons();
+      setCompletedLessons(completed);
+    } catch (error) {
+      console.error('Error loading progress:', error);
+    }
+  };
+
+  const completeLesson = async (lessonId: string) => {
     if (!completedLessons.includes(lessonId)) {
       setCompletedLessons([...completedLessons, lessonId]);
+      await StorageService.saveCompletedLesson(lessonId);
+      // Reload progress to update points
+      await loadProgress();
     }
   };
 
   const selectedModuleData = teachingModules.find(m => m.id === selectedModule);
 
-  // ✅ useEffect correto
   useEffect(() => {
     if (selectedModuleData) {
       window.scrollTo(0, 0);
     }
   }, [selectedModuleData]);
 
-  // ✅ se tiver módulo selecionado, mostra a tela do módulo
   if (selectedModuleData) {
     return (
       <div className="min-h-screen bg-obsidian-gradient">
         <div className="container mx-auto px-4 py-12 pb-24">
           <button
-            variant="ghost"
-            className="mb-6 text-amber-400 hover:text-amber-300"
+            className="mb-6 text-gold-400 hover:text-gold-300 transition-all duration-300 flex items-center gap-2 font-bold"
             onClick={() => setSelectedModule(null)}
           >
             ← Voltar aos Ensinamentos
           </button>
 
           <div className="max-w-4xl mx-auto">
+            <div className="temple-section rounded-3xl p-8 mb-8 text-center shadow-sacred">
+              <h2 className="sacred-text text-2xl md:text-3xl font-black text-gold-400 mb-4">
+                {selectedModuleData.title}
+              </h2>
+              <p className="text-gold-200 text-lg md:text-xl">
+                {selectedModuleData.subtitle}
+              </p>
+            </div>
+
             {selectedModuleData.lessons.map((lesson, index) => (
               <div key={index} className="temple-section rounded-3xl p-8 mb-8 shadow-sacred">
                 <div className="flex items-start gap-4 mb-6">
@@ -172,7 +198,7 @@ export default function Teachings() {
                       : 'sacred-button hover:scale-105'
                   }`}
                 >
-                  {completedLessons.includes(`${selectedModuleData.id}-${index}`) ? '✅ LIÇÃO CONCLUÍDA' : 'MARCAR COMO CONCLUÍDA'}
+                  {completedLessons.includes(`${selectedModuleData.id}-${index}`) ? '✅ LIÇÃO CONCLUÍDA (+15 pontos)' : 'MARCAR COMO CONCLUÍDA'}
                 </button>
               </div>
             ))}
@@ -182,7 +208,6 @@ export default function Teachings() {
     );
   }
 
-  // ✅ se não tiver módulo selecionado, mostra a tela inicial
   return (
     <div className="min-h-screen bg-obsidian-gradient">
       {/* Header e Introdução */}
@@ -277,7 +302,7 @@ export default function Teachings() {
 
                 <div className="flex justify-between items-center">
                   <span className="text-gold-300 text-sm md:text-base">
-                    {module.lessons.length} lições práticas
+                    {module.lessons.length} lições práticas (+15 pontos cada)
                   </span>
                   <div className="flex items-center gap-2 text-gold-400">
                     <span className="font-bold text-sm md:text-base">Começar</span>
