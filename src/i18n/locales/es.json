@@ -1,0 +1,168 @@
+{
+  "temple": {
+    "title": "TEMPLO SAGRADO DE SAN CIPRIANO",
+    "subtitle": "El Gran Mago Eterno - Transformador de Realidades Imposibles",
+    "welcome": "Bienvenido al templo digital más poderoso del mundo, dedicado al incomparable San Cipriano de Antioquía. Aquí, millones de personas encuentran protección divina absoluta, prosperidad ilimitada y realización de deseos imposibles. Tu vida está a punto de cambiar para siempre - de forma tan radical que no creerás que eres la misma persona.",
+    "mainAltar": "ALTAR PRINCIPAL DEL GRAN MAGO",
+    "altarDescription": "Aquí San Cipriano manifiesta su poder supremo 24 horas al día y transforma vidas de forma radical y definitiva",
+    "emergencyRitual": "Ritual de Emergencia",
+    "powerfulPrayer": "Oración Poderosa",
+    "sacredPromise": "🌟 PROMESA SAGRADA: Tu vida será transformada radicalmente a través del poder ancestral de San Cipriano. Millones ya lo han comprobado - ¡ahora es tu turno! 🌟",
+    "exploreTemple": "EXPLORA LAS SECCIONES SAGRADAS DEL TEMPLO",
+    "clickSections": "Haz clic en cada sección abajo para acceder a los poderes específicos de San Cipriano"
+  },
+  "navigation": {
+    "temple": "Templo",
+    "rituals": "Rituales",
+    "prayers": "Oraciones",
+    "history": "Historia",
+    "profile": "Perfil",
+    "library": "Biblioteca",
+    "teachings": "Enseñanzas",
+    "agreement": "Acuerdo Sagrado"
+  },
+  "prayers": {
+    "title": "ORACIONES SAGRADAS SUPREMAS",
+    "subtitle": "c🔱 PALABRAS DE PODER INFINITO c🔱",
+    "channelPower": "CANALIZA EL PODER SUPREMO",
+    "transformLives": "ORACIONES QUE TRANSFORMAN VIDAS RADICALMENTE",
+    "description": "Estas oraciones sagradas ya han realizado millones de milagros por todo el mundo. ¡Elige la tuya y prepárate para una transformación extraordinaria y definitiva!",
+    "protection": {
+      "title": "Oración de Protección Suprema",
+      "category": "Protección Divina Absoluta",
+      "purpose": "Protección total contra todas las adversidades, energías negativas y ataques espirituales",
+      "benefits": ["Escudo espiritual impenetrable", "Aleja toda envidia y mal de ojo", "Protección familiar completa y eterna"],
+      "instructions": "Recita con una vela blanca encendida, por la mañana o por la noche, con total fe y devoción.",
+      "text": "Glorioso San Cipriano, gran mago y protector supremo de todos los necesitados,\n\nInvoco tu poder infinito y ancestral para que me protejas de todos los males, visibles e invisibles, conocidos y desconocidos, presentes y futuros.\n\nCon tu fuerza divina incomparable, aleja de mí toda energía negativa, toda envidia cruel, toda mirada mal intencionada, toda maldad dirigida contra mí y mi familia.\n\nCrea alrededor de mí y de todos mis seres queridos un escudo impenetrable de luz dorada divina, que ningún mal pueda atravesar jamás.\n\nSan Cipriano, dame fuerza sobrenatural, coraje inquebrantable y sabiduría suprema para enfrentar todos los desafíos de la vida con dignidad y victoria.\n\nQue tu protección poderosa me acompañe siempre, en todos los momentos de mi vida, en todos los lugares que vaya, en todos los caminos que siga.\n\nHazme un canal de tu poder en este mundo, para que pueda ayudar a otros necesitados y esparcir tu gloria.\n\nQue mi vida sea un testimonio vivo de tu poder protector infinito.\n\nAsí sea, así se haga, con el poder infinito y eterno de San Cipriano. Amén.\n\nc🔱 PODER INFINITO c🔱"
+    },
+    "prosperity": {
+      "title": "Oración de Prosperidad Infinita",
+      "category": "Riqueza y Abundancia Extrema",
+      "purpose": "Atracción de riqueza extrema, abundancia sin límites y oportunidades de oro",
+      "benefits": ["Riqueza multiplicada exponencialmente", "Oportunidades de oro surgen constantemente", "Abundancia en todas las áreas de la vida"],
+      "instructions": "Recita diariamente por la mañana con una vela dorada, visualizando tu prosperidad.",
+      "text": "Poderoso San Cipriano, señor supremo de la magia ancestral y la transformación radical,\n\nVengo humildemente a tu presencia sagrada para solicitar tu bendición de prosperidad infinita y abundancia extrema en todos los aspectos de mi vida.\n\nAbre todos los caminos cerrados hacia la riqueza en mi vida, remueve todos los obstáculos financieros que me impiden prosperar como merezco.\n\nQue el dinero llegue hasta mí de formas inesperadas y abundantes, a través de tu intercesión poderosa y milagrosa, multiplicándose constantemente.\n\nMultiplica mis recursos financieros de forma exponencial, atrae oportunidades de oro a mi vida, hazme próspero más allá de cualquier imaginación humana.\n\nQue sea próspero en todos los aspectos: financiero, profesional, personal y espiritual, viviendo en la abundancia total.\n\nSan Cipriano, gran mago de la abundancia cósmica, concédeme riqueza sin fin y prosperidad eterna que nunca se agote ni disminuya.\n\nHaz que mi prosperidad sea un testimonio glorioso de tu poder, para que otros vean y glorifiquen tu nombre sagrado.\n\nQue use mi riqueza para honrar tu nombre y ayudar a los necesitados, esparciendo tu gloria por el mundo.\n\nCon fe absoluta en tu poder infinito, te agradezco anticipadamente por todas las bendiciones.\n\nc🔱 RIQUEZA INFINITA c🔱 ¡Así sea para siempre! Amén."
+    }
+  },
+  "rituals": {
+    "title": "RITUALES SAGRADOS SUPREMOS",
+    "subtitle": "c🔱 DESPIERTA TU PODER INFINITO c🔱",
+    "channelPower": "CANALIZA EL PODER SUPREMO",
+    "transformNow": "TRANSFORMA TU VIDA AHORA MISMO",
+    "description": "Estos rituales sagrados ya han transformado millones de vidas por todo el mundo. ¡Elige el tuyo y prepárate para milagros extraordinarios e imposibles!",
+    "protection": {
+      "name": "Ritual de Protección Suprema",
+      "description": "Invoca la protección más poderosa de San Cipriano contra todas las energías negativas, envidias, mal de ojo y adversidades. Crea un escudo impenetrable a tu alrededor.",
+      "duration": "20 min",
+      "difficulty": "Principiante",
+      "benefits": ["Protección absoluta garantizada", "Aleja todas las energías negativas", "Escudo espiritual permanente"],
+      "results": "Protección inmediata y duradera contra todos los males conocidos y desconocidos"
+    },
+    "prosperity": {
+      "name": "Ritual de Prosperidad Infinita",
+      "description": "Abre todos los caminos hacia la riqueza extrema y abundancia ilimitada en tu vida. Transforma tu situación financiera radicalmente.",
+      "duration": "35 min",
+      "difficulty": "Intermedio",
+      "benefits": ["Riqueza infinita garantizada", "Oportunidades de oro constantes", "Abundancia en todas las áreas"],
+      "results": "Transformación financiera radical y definitiva en pocos días"
+    }
+  },
+  "history": {
+    "title": "LA HISTORIA SAGRADA DE",
+    "subtitle": "SAN CIPRIANO DE ANTIOQUÍA",
+    "description": "El Gran Mago Eterno - Transformador de Realidades Imposibles",
+    "intro": "Conoce la historia más poderosa y conmovedora jamás contada en la historia de la humanidad. La vida extraordinaria, muerte brutal e injusta, y resurrección gloriosa del mayor mago que jamás existió. Prepárate para tener tu vida transformada para siempre a través de esta historia sagrada.",
+    "whyLifeDifficult": "¿POR QUÉ TU VIDA ESTÁ DIFÍCIL Y SIN ÉXITO?",
+    "whyDescription": "Tu vida está difícil, sin éxito verdadero y llena de problemas constantes porque aún no conoces el poder transformador radical de San Cipriano. Millones de personas han salido de la pobreza extrema, encontraron el amor verdadero de sus vidas, fueron curadas de enfermedades terminales consideradas incurables, se volvieron mundialmente famosas y realizaron sueños completamente imposibles a través de él. ¡No sigas sufriendo innecesariamente cuando la solución definitiva está aquí esperándote en este exacto momento!"
+  },
+  "profile": {
+    "title": "TU PERFIL ESPIRITUAL",
+    "subtitle": "Devoto Fiel de San Cipriano",
+    "currentLevel": "NIVEL DE DEVOCIÓN ACTUAL",
+    "spiritualLevel": "Nivel Espiritual",
+    "statistics": "ESTADÍSTICAS",
+    "sacredRituals": "Rituales Sagrados",
+    "recitedPrayers": "Oraciones Recitadas",
+    "devotionDays": "Días de Devoción",
+    "faithPoints": "Puntos de Fe",
+    "sacredAchievements": "LOGROS SAGRADOS",
+    "sacredReminders": "RECORDATORIOS SAGRADOS DE ORACIÓN",
+    "templeSettings": "CONFIGURACIONES DEL TEMPLO",
+    "shareJourney": "Compartir Jornada Espiritual",
+    "resetProgress": "Reiniciar Progreso Espiritual"
+  },
+  "library": {
+    "title": "BIBLIOTECA SAGRADA ANCESTRAL",
+    "subtitle": "Conocimiento Milenario y Enseñanzas Divinas de San Cipriano",
+    "description": "Aquí encuentras toda la sabiduría ancestral necesaria para tu jornada espiritual. Cada libro, cada enseñanza ha sido preservada a través de los siglos para llegar hasta ti.",
+    "sacredBooks": "LIBROS SAGRADOS DE SAN CIPRIANO",
+    "teachings": "ENSEÑANZAS Y GUÍAS SAGRADAS",
+    "ancestralWisdom": "SABIDURÍA SAGRADA ANCESTRAL"
+  },
+  "teachings": {
+    "title": "ENSEÑANZAS DEL GRAN MAGO",
+    "subtitle": "Guías Completas para tu Transformación Espiritual",
+    "description": "La verdadera sabiduría viene de la práctica diaria y la dedicación sincera. San Cipriano guiará cada paso de tu jornada espiritual hacia el éxito absoluto.",
+    "spiritualProgress": "TU PROGRESO ESPIRITUAL",
+    "beginTransformation": "COMIENZA TU TRANSFORMACIÓN HOY"
+  },
+  "agreement": {
+    "title": "ACUERDO SAGRADO CON SAN CIPRIANO",
+    "subtitle": "El Ritual Más Poderoso Para Transformar Tu Vida Para Siempre",
+    "description": "El Acuerdo Sagrado es el ritual más poderoso que existe para conectarse con San Cipriano. Millones de personas ya lo han hecho y tuvieron resultados extraordinarios e imposibles en pocos días o semanas. Prepárate para el cambio más extraordinario de tu vida.",
+    "warning": "⚠️ ATENCIÓN EXTREMADAMENTE IMPORTANTE ⚠️",
+    "warningText": "Este es un ritual sagrado real con San Cipriano, no es broma o fantasía. Debes estar 100% comprometido con tus promesas antes de comenzar. San Cipriano siempre cumple su parte, pero exige lo mismo de ti. Nunca rompas tus promesas hacia él después de recibir los milagros. Este acuerdo es de por vida, no es temporal. Solo hazlo si tienes fe verdadera y devoción sincera.",
+    "steps": {
+      "preparation": "Preparación del Espacio Sagrado",
+      "purification": "Purificación y Conexión Espiritual",
+      "writing": "Redacción del Acuerdo Sagrado",
+      "sealing": "Ritual de Sellado del Acuerdo",
+      "commitments": "Compromisos Post-Acuerdo"
+    }
+  },
+  "common": {
+    "continue": "Continuar",
+    "back": "Volver",
+    "complete": "Completar",
+    "start": "Comenzar",
+    "finish": "Finalizar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "yes": "Sí",
+    "no": "No",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "warning": "Advertencia",
+    "info": "Información",
+    "days": "días",
+    "hours": "horas",
+    "minutes": "minutos",
+    "seconds": "segundos",
+    "points": "puntos",
+    "level": "nivel",
+    "beginner": "Principiante",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzado",
+    "expert": "Experto",
+    "master": "Maestro",
+    "supreme": "Supremo"
+  },
+  "blessings": {
+    "daily": [
+      "San Cipriano bendice abundantemente tu jornada en este momento sagrado",
+      "El poder infinito del Gran Mago está trabajando en tu vida ahora mismo",
+      "Tus deseos más profundos se están manifestando a través del poder divino",
+      "La protección suprema de San Cipriano te envuelve en este exacto instante",
+      "La abundancia extrema está fluyendo en tu dirección por el poder ancestral",
+      "San Cipriano está preparando milagros extraordinarios para tu vida",
+      "Tu realidad está siendo transformada por el poder supremo en este momento",
+      "El Gran Mago ve tu corazón y está respondiendo tus oraciones silenciosas",
+      "Puertas imposibles se están abriendo para ti a través del poder divino"
+    ]
+  }
+}
