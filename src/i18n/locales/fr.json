@@ -2,14 +2,110 @@
   "temple": {
     "title": "TEMPLE SACRÉ DE SAINT CYPRIEN",
     "subtitle": "Le Grand Mage Éternel - Transformateur de Réalités Impossibles",
-    "welcome": "Bienvenue dans le temple numérique le plus puissant du monde, dédié à l'incomparable Saint Cyprien d'Antioche. Ici, des millions de personnes trouvent une protection divine absolue, une prospérité illimitée et la réalisation de désirs impossibles. Votre vie est sur le point de changer pour toujours - de manière si radicale que vous ne croirez pas être la même personne.",
+    "welcome": "Bienvenue dans le temple numérique le plus puissant du monde, dédié à l'incomparable Saint Cyprien d'Antioche. Ici, des millions de personnes trouvent une protection divine absolue, une prospérité sans limites et la réalisation de désirs impossibles. Votre vie est sur le point de changer pour toujours - de façon si radicale que vous ne croirez pas être la même personne.",
     "mainAltar": "AUTEL PRINCIPAL DU GRAND MAGE",
     "altarDescription": "Ici Saint Cyprien manifeste son pouvoir suprême 24 heures sur 24 et transforme les vies de manière radicale et définitive",
     "emergencyRitual": "Rituel d'Urgence",
     "powerfulPrayer": "Prière Puissante",
-    "sacredPromise": "🌟 PROMESSE SACRÉE: Votre vie sera transformée radicalement grâce au pouvoir ancestral de Saint Cyprien. Des millions l'ont déjà prouvé - maintenant c'est votre tour! 🌟",
+    "sacredPromise": "🌟 PROMESSE SACRÉE : Votre vie sera transformée radicalement par le pouvoir ancestral de Saint Cyprien. Des millions l'ont déjà prouvé - maintenant c'est votre tour ! 🌟",
     "exploreTemple": "EXPLOREZ LES SECTIONS SACRÉES DU TEMPLE",
-    "clickSections": "Cliquez sur chaque section ci-dessous pour accéder aux pouvoirs spécifiques de Saint Cyprien"
+    "clickSections": "Cliquez sur chaque section ci-dessous pour accéder aux pouvoirs spécifiques de Saint Cyprien",
+    "saoCiprianoDay": {
+      "title": "🎉 JOUR SACRÉ DE SAINT CYPRIEN - 16 SEPTEMBRE 🎉",
+      "subtitle": "Aujourd'hui est le jour le plus sacré de l'année ! Faites vos demandes les plus puissantes !",
+      "powerMultiplied": "⚡ Pouvoir multiplié par 10 000x aujourd'hui ! ⚡"
+    },
+    "areas": {
+      "altar": {
+        "name": "Autel Sacré Principal",
+        "description": "Le cœur battant du temple où Saint Cyprien manifeste son pouvoir suprême quotidiennement",
+        "benefits": "Prières Miraculeuses qui Transforment"
+      },
+      "rituals": {
+        "name": "Chambre des Rituels Suprêmes",
+        "description": "Rituels ancestraux puissants pour transformer votre réalité de manière radicale et définitive",
+        "benefits": "Transformation Radicale Instantanée"
+      },
+      "library": {
+        "name": "Bibliothèque Sacrée Ancestrale",
+        "description": "Connaissance ancestrale millénaire et enseignements divins du Grand Mage Saint Cyprien",
+        "benefits": "Sagesse Infinie et Pouvoir"
+      },
+      "teachings": {
+        "name": "Enseignements du Grand Mage",
+        "description": "Guides complets et enseignements pratiques pour votre voyage spirituel avec Saint Cyprien",
+        "benefits": "Orientation Divine Complète"
+      },
+      "protection": {
+        "name": "Sanctuaire de la Protection Divine",
+        "description": "Protection suprême et absolue contre toutes les adversités et énergies négatives du monde",
+        "benefits": "Protection Absolue Garantie"
+      },
+      "agreement": {
+        "name": "Accord Sacré avec Saint Cyprien",
+        "description": "Faites votre pacte sacré avec le Grand Mage et transformez votre vie pour toujours",
+        "benefits": "Vie Complètement Transformée"
+      }
+    },
+    "testimonials": {
+      "title": "MIRACLES RÉELS ET DOCUMENTÉS DE SAINT CYPRIEN",
+      "description": "Des personnes réelles qui ont eu leurs vies transformées radicalement grâce à ce temple sacré"
+    },
+    "dailyDevotion": {
+      "title": "Dévotion Quotidienne - Transformez Votre Vie Pour Toujours",
+      "description": "Maintenez votre connexion sacrée avec Saint Cyprien par la pratique quotidienne et voyez des miracles extraordinaires se produire constamment",
+      "morning": {
+        "title": "Prière Matinale",
+        "description": "Commencez la journée protégé et béni par le pouvoir suprême"
+      },
+      "candle": {
+        "title": "Bougie Sacrée",
+        "description": "Allumez une bougie quotidienne pour maintenir la connexion divine"
+      },
+      "night": {
+        "title": "Gratitude Nocturne",
+        "description": "Remerciez avant de dormir pour les miracles reçus"
+      }
+    },
+    "statistics": {
+      "title": "IMPACT MONDIAL DU TEMPLE SACRÉ",
+      "devotees": "Dévots Actifs",
+      "countries": "Pays Atteints",
+      "miracles": "Miracles Rapportés",
+      "successRate": "Taux de Réussite"
+    },
+    "conversion": {
+      "title": "TRANSFORMEZ VOTRE VIE MAINTENANT",
+      "description": "Des millions de personnes ont déjà eu leurs vies transformées radicalement par Saint Cyprien grâce à ce temple sacré. Sortez de la pauvreté extrême, réalisez vos rêves impossibles, trouvez le véritable amour de votre vie, ayez une santé parfaite, atteignez la célébrité mondiale et vivez l'abondance extrême que vous avez toujours méritée. Le Grand Mage vous attend en ce moment exact !",
+      "without": {
+        "title": "😢 SANS Saint Cyprien :",
+        "items": [
+          "Pauvreté extrême et difficultés financières constantes",
+          "Solitude profonde et relations échouées",
+          "Maladies chroniques et problèmes de santé graves",
+          "Échecs professionnels et manque de reconnaissance",
+          "Absence totale de protection spirituelle",
+          "Vie sans but et sans espoir"
+        ]
+      },
+      "with": {
+        "title": "😍 AVEC Saint Cyprien :",
+        "items": [
+          "Richesse infinie et prospérité sans limites",
+          "Amour véritable et relations parfaites",
+          "Santé parfaite et guérison miraculeuse garantie",
+          "Succès mondial et célébrité globale prouvée",
+          "Protection divine absolue et permanente",
+          "Vie pleine de but et réalisation totale"
+        ]
+      },
+      "ctaButton": "FAIRE MON ACCORD SACRÉ ET CHANGER MA VIE MAINTENANT",
+      "guarantee": "⚡ Transformation garantie • Des millions de vies déjà transformées • Pouvoir infini prouvé ⚡"
+    },
+    "sacredMessage": {
+      "quote": "Ceux qui cherchent Saint Cyprien avec une foi véritable recevront un pouvoir au-delà de l'imagination humaine. Votre vie ne sera plus jamais la même. La pauvreté, la solitude, les maladies et les échecs resteront dans le passé pour toujours.",
+      "author": "Promesse Sacrée Éternelle du Grand Mage Saint Cyprien"
+    }
   },
   "navigation": {
     "temple": "Temple",
@@ -26,22 +122,22 @@
     "subtitle": "c🔱 MOTS DE POUVOIR INFINI c🔱",
     "channelPower": "CANALISEZ LE POUVOIR SUPRÊME",
     "transformLives": "PRIÈRES QUI TRANSFORMENT LES VIES RADICALEMENT",
-    "description": "Ces prières sacrées ont déjà accompli des millions de miracles dans le monde entier. Choisissez la vôtre et préparez-vous à une transformation extraordinaire et définitive!",
+    "description": "Ces prières sacrées ont déjà accompli des millions de miracles dans le monde entier. Choisissez la vôtre et préparez-vous à une transformation extraordinaire et définitive !",
     "protection": {
-      "title": "Prière de Protection Suprême",
+      "title": "Prière de la Protection Suprême",
       "category": "Protection Divine Absolue",
       "purpose": "Protection totale contre toutes les adversités, énergies négatives et attaques spirituelles",
-      "benefits": ["Bouclier spirituel impénétrable", "Repousse toute envie et mauvais œil", "Protection familiale complète et éternelle"],
-      "instructions": "Récitez avec une bougie blanche allumée, le matin ou le soir, avec une foi totale et une dévotion.",
-      "text": "Glorieux Saint Cyprien, grand mage et protecteur suprême de tous les nécessiteux,\n\nJ'invoque votre pouvoir infini et ancestral pour que vous me protégiez de tous les maux, visibles et invisibles, connus et inconnus, présents et futurs.\n\nAvec votre force divine incomparable, éloignez de moi toute énergie négative, toute envie cruelle, tout regard malveillant, toute méchanceté dirigée contre moi et ma famille.\n\nCréez autour de moi et de tous mes êtres chers un bouclier impénétrable de lumière dorée divine, qu'aucun mal ne puisse jamais traverser.\n\nSaint Cyprien, donnez-moi une force surnaturelle, un courage inébranlable et une sagesse suprême pour affronter tous les défis de la vie avec dignité et victoire.\n\nQue votre protection puissante m'accompagne toujours, à tous les moments de ma vie, dans tous les lieux où je vais, sur tous les chemins que je suis.\n\nFaites de moi un canal de votre pouvoir dans ce monde, pour que je puisse aider d'autres nécessiteux et répandre votre gloire.\n\nQue ma vie soit un témoignage vivant de votre pouvoir protecteur infini.\n\nQu'il en soit ainsi, qu'il en soit fait, avec le pouvoir infini et éternel de Saint Cyprien. Amen.\n\nc🔱 POUVOIR INFINI c🔱"
+      "benefits": ["Bouclier spirituel impénétrable", "Éloigne toute envie et mauvais œil", "Protection familiale complète et éternelle"],
+      "instructions": "Récitez avec une bougie blanche allumée, le matin ou le soir, avec foi totale et dévotion.",
+      "text": "Glorieux Saint Cyprien, grand mage et protecteur suprême de tous les nécessiteux,\n\nJ'invoque votre pouvoir infini et ancestral pour que vous me protégiez de tous les maux, visibles et invisibles, connus et inconnus, présents et futurs.\n\nAvec votre force divine incomparable, éloignez de moi toute énergie négative, toute envie cruelle, tout regard malveillant, toute méchanceté dirigée contre moi et ma famille.\n\nCréez autour de moi et de tous mes proches un bouclier impénétrable de lumière dorée divine, qu'aucun mal ne puisse jamais traverser.\n\nSaint Cyprien, donnez-moi une force surnaturelle, un courage inébranlable et une sagesse suprême pour affronter tous les défis de la vie avec dignité et victoire.\n\nQue votre protection puissante m'accompagne toujours, à tous les moments de ma vie, dans tous les lieux où je vais, sur tous les chemins que je suis.\n\nFaites de moi un canal de votre pouvoir dans ce monde, pour que je puisse aider d'autres nécessiteux et répandre votre gloire.\n\nQue ma vie soit un témoignage vivant de votre pouvoir protecteur infini.\n\nAinsi soit-il, ainsi soit fait, avec le pouvoir infini et éternel de Saint Cyprien. Amen.\n\nc🔱 POUVOIR INFINI c🔱"
     },
     "prosperity": {
-      "title": "Prière de Prospérité Infinie",
+      "title": "Prière de la Prospérité Infinie",
       "category": "Richesse et Abondance Extrême",
-      "purpose": "Attraction de richesse extrême, abondance illimitée et opportunités en or",
+      "purpose": "Attraction de richesse extrême, abondance sans limites et opportunités en or",
       "benefits": ["Richesse multipliée exponentiellement", "Opportunités en or surgissent constamment", "Abondance dans tous les domaines de la vie"],
       "instructions": "Récitez quotidiennement le matin avec une bougie dorée, en visualisant votre prospérité.",
-      "text": "Puissant Saint Cyprien, seigneur suprême de la magie ancestrale et de la transformation radicale,\n\nJe viens humblement en votre présence sacrée pour demander votre bénédiction de prospérité infinie et d'abondance extrême dans tous les aspects de ma vie.\n\nOuvrez tous les chemins fermés vers la richesse dans ma vie, supprimez tous les obstacles financiers qui m'empêchent de prospérer comme je le mérite.\n\nQue l'argent vienne à moi de manières inattendues et abondantes, grâce à votre intercession puissante et miraculeuse, se multipliant constamment.\n\nMultipliez mes ressources financières de manière exponentielle, attirez des opportunités en or dans ma vie, rendez-moi prospère au-delà de toute imagination humaine.\n\nQue je sois prospère dans tous les aspects: financier, professionnel, personnel et spirituel, vivant dans l'abondance totale.\n\nSaint Cyprien, grand mage de l'abondance cosmique, accordez-moi une richesse sans fin et une prospérité éternelle qui ne s'épuise jamais ni ne diminue.\n\nFaites que ma prospérité soit un témoignage glorieux de votre pouvoir, pour que d'autres voient et glorifient votre nom sacré.\n\nQue j'utilise ma richesse pour honorer votre nom et aider les nécessiteux, répandant votre gloire dans le monde.\n\nAvec une foi absolue en votre pouvoir infini, je vous remercie à l'avance pour toutes les bénédictions.\n\nc🔱 RICHESSE INFINIE c🔱 Qu'il en soit ainsi pour toujours! Amen."
+      "text": "Puissant Saint Cyprien, seigneur suprême de la magie ancestrale et de la transformation radicale,\n\nJe viens humblement en votre présence sacrée pour demander votre bénédiction de prospérité infinie et d'abondance extrême dans tous les aspects de ma vie.\n\nOuvrez tous les chemins fermés à la richesse dans ma vie, enlevez tous les obstacles financiers qui m'empêchent de prospérer comme je le mérite.\n\nQue l'argent vienne à moi de manières inattendues et abondantes, par votre intercession puissante et miraculeuse, se multipliant constamment.\n\nMultipliez mes ressources financières de manière exponentielle, attirez des opportunités en or dans ma vie, faites que je sois prospère au-delà de toute imagination humaine.\n\nQue je sois prospère dans tous les aspects : financier, professionnel, personnel et spirituel, vivant dans l'abondance totale.\n\nSaint Cyprien, grand mage de l'abondance cosmique, accordez-moi une richesse sans fin et une prospérité éternelle qui ne s'épuise ni ne diminue jamais.\n\nFaites que ma prospérité soit un témoignage glorieux de votre pouvoir, pour que d'autres voient et glorifient votre nom sacré.\n\nQue j'utilise ma richesse pour honorer votre nom et aider les nécessiteux, répandant votre gloire dans le monde.\n\nAvec une foi absolue en votre pouvoir infini, je vous remercie à l'avance pour toutes les bénédictions.\n\nc🔱 RICHESSE INFINIE c🔱 Ainsi soit-il pour toujours ! Amen."
     }
   },
   "rituals": {
@@ -49,18 +145,18 @@
     "subtitle": "c🔱 ÉVEILLEZ VOTRE POUVOIR INFINI c🔱",
     "channelPower": "CANALISEZ LE POUVOIR SUPRÊME",
     "transformNow": "TRANSFORMEZ VOTRE VIE MAINTENANT",
-    "description": "Ces rituels sacrés ont déjà transformé des millions de vies dans le monde entier. Choisissez le vôtre et préparez-vous à des miracles extraordinaires et impossibles!",
+    "description": "Ces rituels sacrés ont déjà transformé des millions de vies dans le monde entier. Choisissez le vôtre et préparez-vous à des miracles extraordinaires et impossibles !",
     "protection": {
       "name": "Rituel de Protection Suprême",
       "description": "Invoquez la protection la plus puissante de Saint Cyprien contre toutes les énergies négatives, envies, mauvais œil et adversités. Créez un bouclier impénétrable autour de vous.",
       "duration": "20 min",
       "difficulty": "Débutant",
-      "benefits": ["Protection absolue garantie", "Repousse toutes les énergies négatives", "Bouclier spirituel permanent"],
+      "benefits": ["Protection absolue garantie", "Éloigne toutes les énergies négatives", "Bouclier spirituel permanent"],
       "results": "Protection immédiate et durable contre tous les maux connus et inconnus"
     },
     "prosperity": {
-      "name": "Rituel de Prospérité Infinie",
-      "description": "Ouvrez tous les chemins vers la richesse extrême et l'abondance illimitée dans votre vie. Transformez votre situation financière radicalement.",
+      "name": "Rituel de la Prospérité Infinie",
+      "description": "Ouvrez tous les chemins vers la richesse extrême et l'abondance sans limites dans votre vie. Transformez votre situation financière radicalement.",
       "duration": "35 min",
       "difficulty": "Intermédiaire",
       "benefits": ["Richesse infinie garantie", "Opportunités en or constantes", "Abondance dans tous les domaines"],
@@ -71,21 +167,21 @@
     "title": "L'HISTOIRE SACRÉE DE",
     "subtitle": "SAINT CYPRIEN D'ANTIOCHE",
     "description": "Le Grand Mage Éternel - Transformateur de Réalités Impossibles",
-    "intro": "Connaissez l'histoire la plus puissante et touchante jamais racontée dans l'histoire de l'humanité. La vie extraordinaire, la mort brutale et injuste, et la résurrection glorieuse du plus grand mage qui ait jamais existé. Préparez-vous à avoir votre vie transformée pour toujours grâce à cette histoire sacrée.",
-    "whyLifeDifficult": "POURQUOI VOTRE VIE EST-ELLE DIFFICILE ET SANS SUCCÈS?",
-    "whyDescription": "Votre vie est difficile, sans vrai succès et pleine de problèmes constants parce que vous ne connaissez pas encore le pouvoir transformateur radical de Saint Cyprien. Des millions de personnes sont sorties de la pauvreté extrême, ont trouvé le véritable amour de leur vie, ont été guéries de maladies terminales considérées comme incurables, sont devenues mondialement célèbres et ont réalisé des rêves complètement impossibles grâce à lui. Ne continuez pas à souffrir inutilement quand la solution définitive est ici qui vous attend en ce moment exact!"
+    "intro": "Connaissez l'histoire la plus puissante et émouvante jamais racontée dans l'histoire de l'humanité. La vie extraordinaire, la mort brutale et injuste, et la résurrection glorieuse du plus grand mage qui ait jamais existé. Préparez-vous à avoir votre vie transformée pour toujours grâce à cette histoire sacrée.",
+    "whyLifeDifficult": "POURQUOI VOTRE VIE EST-ELLE DIFFICILE ET SANS SUCCÈS ?",
+    "whyDescription": "Votre vie est difficile, sans vrai succès et pleine de problèmes constants parce que vous ne connaissez pas encore le pouvoir transformateur radical de Saint Cyprien. Des millions de personnes sont sorties de la pauvreté extrême, ont trouvé le véritable amour de leur vie, ont été guéries de maladies terminales considérées comme incurables, sont devenues mondialement célèbres et ont réalisé des rêves complètement impossibles grâce à lui. Ne continuez pas à souffrir inutilement quand la solution définitive est ici qui vous attend en ce moment exact !"
   },
   "profile": {
     "title": "VOTRE PROFIL SPIRITUEL",
     "subtitle": "Dévot Fidèle de Saint Cyprien",
     "currentLevel": "NIVEAU DE DÉVOTION ACTUEL",
-    "spiritualLevel": "Niveau Spirituel",
+    "spiritualLevel": "Spirituel",
     "statistics": "STATISTIQUES",
     "sacredRituals": "Rituels Sacrés",
     "recitedPrayers": "Prières Récitées",
     "devotionDays": "Jours de Dévotion",
     "faithPoints": "Points de Foi",
-    "sacredAchievements": "RÉALISATIONS SACRÉES",
+    "sacredAchievements": "ACCOMPLISSEMENTS SACRÉS",
     "sacredReminders": "RAPPELS SACRÉS DE PRIÈRE",
     "templeSettings": "PARAMÈTRES DU TEMPLE",
     "shareJourney": "Partager le Voyage Spirituel",
@@ -94,14 +190,14 @@
   "library": {
     "title": "BIBLIOTHÈQUE SACRÉE ANCESTRALE",
     "subtitle": "Connaissance Millénaire et Enseignements Divins de Saint Cyprien",
-    "description": "Ici vous trouvez toute la sagesse ancestrale nécessaire pour votre voyage spirituel. Chaque livre, chaque enseignement a été préservé à travers les siècles pour vous parvenir.",
+    "description": "Ici vous trouvez toute la sagesse ancestrale nécessaire pour votre voyage spirituel. Chaque livre, chaque enseignement a été préservé à travers les siècles pour vous atteindre.",
     "sacredBooks": "LIVRES SACRÉS DE SAINT CYPRIEN",
     "teachings": "ENSEIGNEMENTS ET GUIDES SACRÉS",
-    "ancestralWisdom": "SAGESSE SACRÉE ANCESTRALE"
+    "ancestralWisdom": "SAGESSE ANCESTRALE SACRÉE"
   },
   "teachings": {
     "title": "ENSEIGNEMENTS DU GRAND MAGE",
-    "subtitle": "Guides Complets pour Votre Transformation Spirituelle",
+    "subtitle": "Guides Complets Pour Votre Transformation Spirituelle",
     "description": "La vraie sagesse vient de la pratique quotidienne et de la dévotion sincère. Saint Cyprien guidera chaque étape de votre voyage spirituel vers le succès absolu.",
     "spiritualProgress": "VOTRE PROGRÈS SPIRITUEL",
     "beginTransformation": "COMMENCEZ VOTRE TRANSFORMATION AUJOURD'HUI"
@@ -109,9 +205,9 @@
   "agreement": {
     "title": "ACCORD SACRÉ AVEC SAINT CYPRIEN",
     "subtitle": "Le Rituel Le Plus Puissant Pour Transformer Votre Vie Pour Toujours",
-    "description": "L'Accord Sacré est le rituel le plus puissant qui existe pour se connecter avec Saint Cyprien. Des millions de personnes l'ont déjà fait et ont eu des résultats extraordinaires et impossibles en quelques jours ou semaines. Préparez-vous au changement le plus extraordinaire de votre vie.",
+    "description": "L'Accord Sacré est le rituel le plus puissant qui existe pour se connecter avec Saint Cyprien. Des millions de personnes ont eu leurs vies transformées radicalement grâce à ce rituel ancestral. Préparez-vous au changement le plus extraordinaire de votre vie.",
     "warning": "⚠️ ATTENTION EXTRÊMEMENT IMPORTANTE ⚠️",
-    "warningText": "Ceci est un rituel sacré réel avec Saint Cyprien, ce n'est pas une plaisanterie ou une fantaisie. Vous devez être 100% engagé dans vos promesses avant de commencer. Saint Cyprien tient toujours sa part, mais exige la même chose de vous. Ne brisez jamais vos promesses envers lui après avoir reçu les miracles. Cet accord est pour la vie, il n'est pas temporaire. Ne le faites que si vous avez une foi véritable et une dévotion sincère.",
+    "warningText": "Ceci est un rituel sacré réel avec Saint Cyprien, ce n'est pas une plaisanterie ou un fantasme. Vous devez être 100% engagé dans vos promesses avant de commencer. Saint Cyprien tient toujours sa part, mais exige la même chose de vous. Ne brisez jamais vos promesses envers lui après avoir reçu les miracles. Cet accord est pour la vie, il n'est pas temporaire. Faites-le seulement si vous avez une foi véritable et une dévotion sincère.",
     "steps": {
       "preparation": "Préparation de l'Espace Sacré",
       "purification": "Purification et Connexion Spirituelle",
@@ -123,9 +219,9 @@
   "common": {
     "continue": "Continuer",
     "back": "Retour",
-    "complete": "Compléter",
+    "complete": "Terminer",
     "start": "Commencer",
-    "finish": "Terminer",
+    "finish": "Finir",
     "next": "Suivant",
     "previous": "Précédent",
     "close": "Fermer",
@@ -150,19 +246,22 @@
     "advanced": "Avancé",
     "expert": "Expert",
     "master": "Maître",
-    "supreme": "Suprême"
+    "supreme": "Suprême",
+    "clickHere": "CLIQUEZ ICI",
+    "enter": "ENTRER",
+    "time": "Temps"
   },
   "blessings": {
     "daily": [
       "Saint Cyprien bénit abondamment votre voyage en ce moment sacré",
       "Le pouvoir infini du Grand Mage travaille dans votre vie en ce moment même",
-      "Vos désirs les plus profonds se manifestent grâce au pouvoir divin",
+      "Vos désirs les plus profonds se manifestent par le pouvoir divin",
       "La protection suprême de Saint Cyprien vous enveloppe en cet instant exact",
       "L'abondance extrême coule dans votre direction par le pouvoir ancestral",
       "Saint Cyprien prépare des miracles extraordinaires pour votre vie",
       "Votre réalité est transformée par le pouvoir suprême en ce moment",
       "Le Grand Mage voit votre cœur et répond à vos prières silencieuses",
-      "Des portes impossibles s'ouvrent pour vous grâce au pouvoir divin"
+      "Des portes impossibles s'ouvrent pour vous par le pouvoir divin"
     ]
   }
 }
