@@ -10,8 +10,8 @@ const agreementSteps = [
       "Escolha uma noite de lua crescente ou cheia (verificar calendário lunar)",
       "Encontre um local privado onde não será interrompido por pelo menos 1 hora",
       "Limpe completamente o espaço físico e energético",
-      "Acenda 7 velas douradas ou brancas em círculo",
-      "Coloque uma imagem de São Cipriano ou desenhe o símbolo c🔱",
+      "Acenda 7 velas douradas ou brancas em círculo (opcional mas recomendado)",
+      "Coloque uma imagem de São Cipriano (pode ser digital) ou desenhe o símbolo c🔱",
       "Tenha papel pergaminho ou branco e caneta vermelha ou preta",
       "Prepare incenso de mirra, sândalo ou rosa (opcional mas recomendado)"
     ],
@@ -53,14 +53,16 @@ const agreementSteps = [
     title: "Ritual de Selamento do Acordo",
     description: "Execute o ritual sagrado para selar seu acordo com São Cipriano",
     instructions: [
-      "Ajoelhe-se diante das velas com o papel nas mãos",
+      "Ajoelhe-se diante das velas (se houver) e imagem de São Cipriano com o papel nas mãos",
       "Leia o acordo em voz alta 3 vezes com total convicção",
       "Queime uma ponta do papel na chama da vela central",
       "Enquanto queima, diga: 'Este acordo está selado pelo fogo sagrado'",
-      "Guarde as cinzas em um recipiente pequeno (nunca jogue fora)",
+      "Assopre as cinzas ao vento em local aberto e imagine seus desejos se tornando realidade",
       "Recite a Oração do Acordo Sagrado (fornecida abaixo) 7 vezes",
       "Mantenha silêncio absoluto por 10 minutos sentindo a presença dele",
-      "Agradeça profundamente como se já tivesse recebido tudo"
+      "Agradeça profundamente como se já tivesse recebido tudo",
+      "Comece no mesmo instante a fazer tua parte (oração, divulgação...)",
+      "Observe os sinais nos dias seguintes."
     ],
     warning: "O acordo está selado após este ritual. Mantenha sua parte religiosamente ou as consequências serão graves."
   },
@@ -71,10 +73,10 @@ const agreementSteps = [
     instructions: [
       "Ore para São Cipriano todos os dias pela manhã e à noite",
       "Acenda uma vela para ele pelo menos uma vez por semana",
-      "Espalhe sua palavra: conte para outras pessoas sobre seu poder",
+      "Espalhe sua palavra: conte para outras pessoas sobre seu poder (pode-se utilizar de meios digitais para atingir o máximo de pessoas)",
       "Faça caridade em nome dele (doe alimentos, ajude necessitados)",
       "Mantenha sempre uma imagem dele em casa ou o símbolo c🔱",
-      "Quando seus pedidos forem atendidos, cumpra rigorosamente o prometido",
+      "Sempre lembre-se de cumprir rigorosamente o prometido",
       "Nunca renegue ou esqueça São Cipriano depois de receber os milagres",
       "Ensine outros devotos sobre como fazer seus próprios acordos"
     ],
