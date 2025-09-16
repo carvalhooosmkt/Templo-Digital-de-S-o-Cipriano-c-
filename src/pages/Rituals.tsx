@@ -20,7 +20,7 @@ const translations = {
     ritualComplete: "Seu ritual está completo! Os milagres de São Cipriano já começaram!",
     reciteAloud: "RECITE EM VOZ ALTA:",
     importantGuidance: "Orientação Importante:",
-    guaranteedResult: "RESULTADO GARANTIDO:",
+    guaranteedResult: "RESULTADO GARANTIZADO:",
     difficulty: {
       iniciante: "Iniciante",
       intermediario: "Intermediário",
@@ -815,7 +815,11 @@ const useLanguage = () => {
     return translations[language]?.[key] || translations.pt[key] || key;
   };
   
-  return { language, changeLanguage, t };
+  const getCurrentTranslation = () => {
+    return translations[language] || translations.pt;
+  };
+  
+  return { language, changeLanguage, t, getCurrentTranslation };
 };
 
 const LanguageSelector = ({ language, onLanguageChange }: { language: string, onLanguageChange: (lang: string) => void }) => {
@@ -907,178 +911,182 @@ interface Ritual {
 }
 
 export default function Rituals() {
-  const { language, changeLanguage, t } = useLanguage();
+  const { language, changeLanguage, t, getCurrentTranslation } = useLanguage();
   const [selectedRitual, setSelectedRitual] = useState<Ritual | null>(null);
   const [isActive, setIsActive] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
 
-  const rituals: Ritual[] = [
-    {
-      id: '1',
-      name: t('ritualProtection.name'),
-      description: t('ritualProtection.description'),
-      duration: '20 min',
-      difficulty: 'Iniciante',
-      icon: Shield,
-      candles: 1,
-      benefits: t('ritualProtection.benefits'),
-      results: t('ritualProtection.results'),
-      fullRitual: {
-        invocation: `Poderoso São Cipriano, Grande Mago Supremo,
+  const getCurrentRituals = (): Ritual[] => {
+    const trans = getCurrentTranslation();
+    
+    return [
+      {
+        id: '1',
+        name: trans.ritualProtection.name,
+        description: trans.ritualProtection.description,
+        duration: '20 min',
+        difficulty: 'Iniciante',
+        icon: Shield,
+        candles: 1,
+        benefits: trans.ritualProtection.benefits,
+        results: trans.ritualProtection.results,
+        fullRitual: {
+          invocation: `Poderoso São Cipriano, Grande Mago Supremo,
         Invoco vosso poder infinito neste momento sagrado.
         Protegei-me de todos os males, visíveis e invisíveis.
         Criai um escudo dourado ao meu redor que nada possa atravessar.
         Assim seja, com vosso poder eterno. c🔱`,
-        steps: [
-          {
-            title: t('ritualProtection.steps.preparation'),
-            instruction: "Prepare seu espaço ritual com uma vela branca e limpeza energética",
-            action: "Acenda uma vela branca e purifique o ambiente com incenso ou água benta",
-            details: "Este é o momento de criar um ambiente sagrado. Limpe fisicamente o espaço e mentalmente se prepare para a conexão divina."
-          },
-          {
-            title: t('ritualProtection.steps.invocation'),
-            instruction: "Recite a invocação sagrada com fé absoluta e devoção total",
-            text: `Poderoso São Cipriano, Grande Mago Supremo,
+          steps: [
+            {
+              title: trans.ritualProtection.steps.preparation,
+              instruction: "Prepare seu espaço ritual com uma vela branca e limpeza energética",
+              action: "Acenda uma vela branca e purifique o ambiente com incenso ou água benta",
+              details: "Este é o momento de criar um ambiente sagrado. Limpe fisicamente o espaço e mentalmente se prepare para a conexão divina."
+            },
+            {
+              title: trans.ritualProtection.steps.invocation,
+              instruction: "Recite a invocação sagrada com fé absoluta e devoção total",
+              text: `Poderoso São Cipriano, Grande Mago Supremo,
 Invoco vosso poder infinito neste momento sagrado.
 Protegei-me de todos os males, visíveis e invisíveis.
 Criai um escudo dourado ao meu redor que nada possa atravessar.
 Assim seja, com vosso poder eterno. c🔱`,
-            action: "Repita a invocação 3 vezes em voz alta com total convicção",
-            details: "Fale com o coração aberto. São Cipriano ouve cada palavra e sente sua sinceridade."
-          },
-          {
-            title: t('ritualProtection.steps.visualization'),
-            instruction: "Visualize intensamente um escudo dourado se formando ao seu redor",
-            action: "Imagine uma luz dourada envolvendo todo seu corpo como uma armadura divina",
-            details: "A visualização é fundamental. Veja, sinta e acredite que a proteção está se formando neste momento."
-          },
-          {
-            title: t('ritualProtection.steps.commitment'),
-            instruction: "Comprometa-se com devoção diária e divulgação de São Cipriano",
-            action: "Prometa orar diariamente e espalhar a palavra do Grande Mago",
-            details: "Este compromisso fortalece sua conexão e mantém a proteção ativa permanentemente."
-          },
-          {
-            title: t('ritualProtection.steps.sealing'),
-            instruction: "Agradeça profundamente como se a proteção já estivesse completa",
-            action: "Finalize com gratidão sincera e fé inabalável no poder recebido",
-            details: "A gratidão sela o ritual e ativa imediatamente a proteção divina."
-          }
-        ]
-      }
-    },
-    {
-      id: '2',
-      name: t('ritualProsperity.name'),
-      description: t('ritualProsperity.description'),
-      duration: '35 min',
-      difficulty: 'Intermediário',
-      icon: Diamond,
-      candles: 3,
-      benefits: t('ritualProsperity.benefits'),
-      results: t('ritualProsperity.results'),
-      fullRitual: {
-        invocation: `São Cipriano, Senhor da Abundância Infinita,
+              action: "Repita a invocação 3 vezes em voz alta com total convicção",
+              details: "Fale com o coração aberto. São Cipriano ouve cada palavra e sente sua sinceridade."
+            },
+            {
+              title: trans.ritualProtection.steps.visualization,
+              instruction: "Visualize intensamente um escudo dourado se formando ao seu redor",
+              action: "Imagine uma luz dourada envolvendo todo seu corpo como uma armadura divina",
+              details: "A visualização é fundamental. Veja, sinta e acredite que a proteção está se formando neste momento."
+            },
+            {
+              title: trans.ritualProtection.steps.commitment,
+              instruction: "Comprometa-se com devoção diária e divulgação de São Cipriano",
+              action: "Prometa orar diariamente e espalhar a palavra do Grande Mago",
+              details: "Este compromisso fortalece sua conexão e mantém a proteção ativa permanentemente."
+            },
+            {
+              title: trans.ritualProtection.steps.sealing,
+              instruction: "Agradeça profundamente como se a proteção já estivesse completa",
+              action: "Finalize com gratidão sincera e fé inabalável no poder recebido",
+              details: "A gratidão sela o ritual e ativa imediatamente a proteção divina."
+            }
+          ]
+        }
+      },
+      {
+        id: '2',
+        name: trans.ritualProsperity.name,
+        description: trans.ritualProsperity.description,
+        duration: '35 min',
+        difficulty: 'Intermediário',
+        icon: Diamond,
+        candles: 3,
+        benefits: trans.ritualProsperity.benefits,
+        results: trans.ritualProsperity.results,
+        fullRitual: {
+          invocation: `São Cipriano, Senhor da Abundância Infinita,
         Abri todos os caminhos da prosperidade em minha vida.
         Multiplicai minha riqueza além de qualquer imaginação.
         Fazei de mim um ímã poderoso para o dinheiro e sucesso.
         Que a abundância flua constantemente em minha direção. c🔱`,
-        steps: [
-          {
-            title: "Preparação do Altar da Abundância",
-            instruction: "Monte um altar com 3 velas douradas e símbolos de prosperidade",
-            action: "Acenda 3 velas douradas em triângulo e coloque moedas ou dinheiro no centro",
-            details: "O altar representa sua intenção de prosperidade. Use objetos que simbolizem riqueza e abundância."
-          },
-          {
-            title: "Invocação da Prosperidade",
-            instruction: "Chame São Cipriano para abrir os caminhos da abundância",
-            text: `São Cipriano, Senhor da Abundância Infinita,
+          steps: [
+            {
+              title: "Preparação do Altar da Abundância",
+              instruction: "Monte um altar com 3 velas douradas e símbolos de prosperidade",
+              action: "Acenda 3 velas douradas em triângulo e coloque moedas ou dinheiro no centro",
+              details: "O altar representa sua intenção de prosperidade. Use objetos que simbolizem riqueza e abundância."
+            },
+            {
+              title: "Invocação da Prosperidade",
+              instruction: "Chame São Cipriano para abrir os caminhos da abundância",
+              text: `São Cipriano, Senhor da Abundância Infinita,
 Abri todos os caminhos da prosperidade em minha vida.
 Multiplicai minha riqueza além de qualquer imaginação.
 Fazei de mim um ímã poderoso para o dinheiro e sucesso.
 Que a abundância flua constantemente em minha direção. c🔱`,
-            action: "Recite com paixão e convicção, sentindo a energia da prosperidade",
-            details: "Acredite completamente que São Cipriano está abrindo os caminhos para sua riqueza neste momento."
-          },
-          {
-            title: "Pedido Específico de Prosperidade",
-            instruction: "Faça pedidos específicos sobre sua situação financeira",
-            action: "Detalhe exatamente quanto dinheiro deseja e como deseja receber",
-            details: "Seja específico: 'Desejo ganhar R$ X por mês através de...' Quanto mais claro, melhor."
-          },
-          {
-            title: "Visualização da Abundância",
-            instruction: "Visualize-se vivendo na abundância total e extrema",
-            action: "Imagine-se rico, próspero, com todo o dinheiro que sempre sonhou",
-            details: "Sinta as emoções de já ser rico. Veja sua nova vida próspera em detalhes vívidos."
-          },
-          {
-            title: "Compromisso de Reciprocidade",
-            instruction: "Comprometa-se a honrar São Cipriano com sua prosperidade",
-            action: "Prometa usar parte da riqueza para honrar o Grande Mago e ajudar outros",
-            details: "A reciprocidade mantém o fluxo de abundância ativo e crescente constantemente."
-          }
-        ]
-      }
-    },
-    {
-      id: '3',
-      name: t('ritualPower.name'),
-      description: t('ritualPower.description'),
-      duration: '50 min',
-      difficulty: 'Avançado',
-      icon: Zap,
-      candles: 7,
-      benefits: t('ritualPower.benefits'),
-      results: t('ritualPower.results'),
-      fullRitual: {
-        invocation: `São Cipriano, Mestre Supremo de Todos os Poderes,
+              action: "Recite com paixão e convicção, sentindo a energia da prosperidade",
+              details: "Acredite completamente que São Cipriano está abrindo os caminhos para sua riqueza neste momento."
+            },
+            {
+              title: "Pedido Específico de Prosperidade",
+              instruction: "Faça pedidos específicos sobre sua situação financeira",
+              action: "Detalhe exatamente quanto dinheiro deseja e como deseja receber",
+              details: "Seja específico: 'Desejo ganhar R$ X por mês através de...' Quanto mais claro, melhor."
+            },
+            {
+              title: "Visualização da Abundância",
+              instruction: "Visualize-se vivendo na abundância total e extrema",
+              action: "Imagine-se rico, próspero, com todo o dinheiro que sempre sonhou",
+              details: "Sinta as emoções de já ser rico. Veja sua nova vida próspera em detalhes vívidos."
+            },
+            {
+              title: "Compromisso de Reciprocidade",
+              instruction: "Comprometa-se a honrar São Cipriano com sua prosperidade",
+              action: "Prometa usar parte da riqueza para honrar o Grande Mago e ajudar outros",
+              details: "A reciprocidade mantém o fluxo de abundância ativo e crescente constantemente."
+            }
+          ]
+        }
+      },
+      {
+        id: '3',
+        name: trans.ritualPower.name,
+        description: trans.ritualPower.description,
+        duration: '50 min',
+        difficulty: 'Avançado',
+        icon: Zap,
+        candles: 7,
+        benefits: trans.ritualPower.benefits,
+        results: trans.ritualPower.results,
+        fullRitual: {
+          invocation: `São Cipriano, Mestre Supremo de Todos os Poderes,
         Concedei-me uma porção de vosso poder infinito.
         Que minha vontade se manifeste instantaneamente.
         Fazei-me senhor absoluto do meu destino.
         Com vosso poder, nada me é impossível. c🔱`,
-        steps: [
-          {
-            title: "Criação do Círculo de Poder",
-            instruction: "Monte um círculo sagrado com 7 velas douradas",
-            action: "Disponha 7 velas em círculo perfeito e posicione-se no centro",
-            details: "O círculo de 7 velas canaliza o poder máximo. Cada vela representa um aspecto do poder supremo."
-          },
-          {
-            title: "Invocação do Poder Supremo",
-            instruction: "Invoque o poder máximo de São Cipriano com autoridade",
-            text: `São Cipriano, Mestre Supremo de Todos os Poderes,
+          steps: [
+            {
+              title: "Criação do Círculo de Poder",
+              instruction: "Monte um círculo sagrado com 7 velas douradas",
+              action: "Disponha 7 velas em círculo perfeito e posicione-se no centro",
+              details: "O círculo de 7 velas canaliza o poder máximo. Cada vela representa um aspecto do poder supremo."
+            },
+            {
+              title: "Invocação do Poder Supremo",
+              instruction: "Invoque o poder máximo de São Cipriano com autoridade",
+              text: `São Cipriano, Mestre Supremo de Todos os Poderes,
 Concedei-me uma porção de vosso poder infinito.
 Que minha vontade se manifeste instantaneamente.
 Fazei-me senhor absoluto do meu destino.
 Com vosso poder, nada me é impossível. c🔱`,
-            action: "Recite com voz firme e autoridade, sentindo o poder crescer em você",
-            details: "Este é o momento crucial. Sinta o poder de São Cipriano fluindo através de você."
-          },
-          {
-            title: "Declaração de Poder Pessoal",
-            instruction: "Declare com autoridade absoluta seus objetivos e desejos",
-            action: "Fale em voz alta: 'Eu tenho o poder de...' e declare seus objetivos",
-            details: "Use frases de poder: 'Eu comando', 'Eu decreto', 'Eu manifesto'. Sinta-se poderoso."
-          },
-          {
-            title: "Canalização da Energia Suprema",
-            instruction: "Visualize energia dourada entrando em seu corpo",
-            action: "Sinta o poder de São Cipriano preenchendo cada célula do seu ser",
-            details: "Esta energia transformará você permanentemente. Absorva-a completamente."
-          },
-          {
-            title: "Selamento do Poder Recebido",
-            instruction: "Sele o poder recebido com gratidão e compromisso",
-            action: "Agradeça e prometa usar o poder para o bem e para glorificar São Cipriano",
-            details: "O poder selado permanece ativo. Use-o sempre com sabedoria e responsabilidade."
-          }
-        ]
+              action: "Recite com voz firme e autoridade, sentindo o poder crescer em você",
+              details: "Este é o momento crucial. Sinta o poder de São Cipriano fluindo através de você."
+            },
+            {
+              title: "Declaração de Poder Pessoal",
+              instruction: "Declare com autoridade absoluta seus objetivos e desejos",
+              action: "Fale em voz alta: 'Eu tenho o poder de...' e declare seus objetivos",
+              details: "Use frases de poder: 'Eu comando', 'Eu decreto', 'Eu manifesto'. Sinta-se poderoso."
+            },
+            {
+              title: "Canalização da Energia Suprema",
+              instruction: "Visualize energia dourada entrando em seu corpo",
+              action: "Sinta o poder de São Cipriano preenchendo cada célula do seu ser",
+              details: "Esta energia transformará você permanentemente. Absorva-a completamente."
+            },
+            {
+              title: "Selamento do Poder Recebido",
+              instruction: "Sele o poder recebido com gratidão e compromisso",
+              action: "Agradeça e prometa usar o poder para o bem e para glorificar São Cipriano",
+              details: "O poder selado permanece ativo. Use-o sempre com sabedoria e responsabilidade."
+            }
+          ]
+        }
       }
-    }
-  ];
+    ];
+  };
 
   const startRitual = (ritual: Ritual) => {
     setSelectedRitual(ritual);
@@ -1223,6 +1231,8 @@ Com vosso poder, nada me é impossível. c🔱`,
     );
   }
 
+  const rituals = getCurrentRituals();
+
   return (
     <div className="min-h-screen bg-obsidian-gradient">
       {/* Language Selector */}
@@ -1302,7 +1312,7 @@ Com vosso poder, nada me é impossível. c🔱`,
 
                 {/* Benefits */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
-                  {ritual.benefits.map((benefit, index) => (
+                  {Array.isArray(ritual.benefits) && ritual.benefits.map((benefit, index) => (
                     <div key={index} className="bg-gold-500/10 rounded-xl p-3 text-center border border-gold-500/30">
                       <span className="text-gold-400 font-bold text-sm md:text-base">✨ {benefit}</span>
                     </div>
