@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Crown, Heart, Zap, Star, CheckCircle, Flame, Shield, Diamond, Globe, ChevronDown, ChevronUp } from 'lucide-react';
 
 const translations = {
