@@ -243,166 +243,6 @@ const translations = {
     }
   },
   
-  en: {
-    title: "SUPREME SACRED PRAYERS",
-    subtitle: "WORDS OF INFINITE POWER",
-    channelPower: "CHANNEL THE SUPREME POWER",
-    transformMessage: "PRAYERS THAT RADICALLY TRANSFORM LIVES",
-    transformDesc: "These sacred prayers have already performed millions of miracles worldwide. Choose yours and prepare for an extraordinary and definitive transformation!",
-    touchToRecite: "Touch to recite with supreme power",
-    benefitsTitle: "BENEFITS OF THIS SACRED PRAYER",
-    sacredInstructions: "SACRED INSTRUCTIONS:",
-    sacredMessage: "Recite this prayer with absolute faith and sincere devotion. Saint Cyprian hears every word and will work tirelessly to fulfill your deepest requests.",
-    keepCandles: "Keep the candles lit throughout the prayer and focus intensely on your request",
-    startPrayer: "Start Prayer",
-    pausePrayer: "Pause Prayer",
-    concludeAndThank: "CONCLUDE AND THANK",
-    prayerHeard: "Your prayer has been heard! Await Saint Cyprian's miracles with absolute faith",
-    howToRecite: "HOW TO RECITE THE SACRED PRAYERS",
-    sacredPreparation: "SACRED PREPARATION:",
-    duringPrayer: "DURING PRAYER:",
-    sacredPromise: "ETERNAL SACRED PROMISE",
-    promiseText: "Those who recite these prayers with true faith and sincere devotion will see extraordinary and impossible miracles happen in their lives. Saint Cyprian never abandons his faithful devotees and always rewards those who honor him with true love.",
-    preparationSteps: [
-      "Light a white or golden candle with reverence",
-      "Find a quiet and sacred place",
-      "Have an image of Saint Cyprian nearby",
-      "Breathe deeply 7 times to purify",
-      "Focus completely on your request"
-    ],
-    prayerSteps: [
-      "Recite aloud with true emotion",
-      "Intensely visualize your request being fulfilled",
-      "Maintain absolute and unshakeable faith",
-      "Give thanks as if you already received the miracle",
-      "Feel Saint Cyprian's powerful presence"
-    ],
-    prayers: {
-      protection: {
-        title: "Prayer of Supreme Protection",
-        category: "Absolute Divine Protection",
-        purpose: "Total protection against all adversities, negative energies and spiritual attacks",
-        benefits: ["Impenetrable spiritual shield", "Repels all envy and evil eye", "Complete and eternal family protection"],
-        instructions: "Recite with a white candle lit, morning or night, with total faith and devotion."
-      },
-      prosperity: {
-        title: "Prayer of Infinite Prosperity",
-        category: "Wealth and Extreme Abundance",
-        purpose: "Attraction of extreme wealth, limitless abundance and golden opportunities",
-        benefits: ["Exponentially multiplied wealth", "Golden opportunities arise constantly", "Abundance in all areas of life"],
-        instructions: "Recite daily in the morning with a golden candle, visualizing your prosperity."
-      },
-      power: {
-        title: "Prayer of Supreme Power",
-        category: "Personal Power and Authority",
-        purpose: "Development of personal power, absolute authority and worldwide influence",
-        benefits: ["Supreme authority over all situations", "Worldwide influence and recognition", "Instant manifestation power"],
-        instructions: "Recite in a private place, with 7 golden candles, focusing on your inner power."
-      },
-      love: {
-        title: "Prayer of True Love",
-        category: "Love and Perfect Relationships",
-        purpose: "Attraction of true love, perfect relationships and eternal union",
-        benefits: ["True and lasting love", "Dream relationship realized", "Sacred and eternal union"],
-        instructions: "Recite with two red candles lit, thinking of the loved one or the love you desire."
-      },
-      healing: {
-        title: "Prayer of Miraculous Healing",
-        category: "Perfect Health and Divine Healing",
-        purpose: "Complete healing of all diseases, perfect health and extreme vitality",
-        benefits: ["Total and definitive healing", "Radiant and perfect health", "Extreme and lasting vitality"],
-        instructions: "Recite with a white candle, touching the body part that needs healing."
-      },
-      fame: {
-        title: "Prayer of World Fame",
-        category: "Global Success and Recognition",
-        purpose: "Achieve world fame, global recognition and planetary influence",
-        benefits: ["Guaranteed international fame", "Worldwide recognition in your field", "Positive global influence"],
-        instructions: "Recite with 5 golden candles in star formation, visualizing your worldwide success."
-      }
-    }
-  },
-  
-  es: {
-    title: "ORACIONES SAGRADAS SUPREMAS",
-    subtitle: "PALABRAS DE PODER INFINITO",
-    channelPower: "CANALIZA EL PODER SUPREMO",
-    transformMessage: "ORACIONES QUE TRANSFORMAN VIDAS RADICALMENTE",
-    transformDesc: "¡Estas oraciones sagradas ya han realizado millones de milagros en todo el mundo. Elige la tuya y prepárate para una transformación extraordinaria y definitiva!",
-    touchToRecite: "Toca para recitar con poder supremo",
-    benefitsTitle: "BENEFICIOS DE ESTA ORACIÓN SAGRADA",
-    sacredInstructions: "INSTRUCCIONES SAGRADAS:",
-    sacredMessage: "Recita esta oración con fe absoluta y devoción sincera. San Cipriano escucha cada palabra y trabajará incansablemente para realizar tus peticiones más profundas.",
-    keepCandles: "Mantén las velas encendidas durante toda la oración y concéntrate intensamente en tu petición",
-    startPrayer: "Iniciar Oración",
-    pausePrayer: "Pausar Oración",
-    concludeAndThank: "CONCLUIR Y AGRADECER",
-    prayerHeard: "¡Tu oración ha sido escuchada! Aguarda los milagros de San Cipriano con fe absoluta",
-    howToRecite: "CÓMO RECITAR LAS ORACIONES SAGRADAS",
-    sacredPreparation: "PREPARACIÓN SAGRADA:",
-    duringPrayer: "DURANTE LA ORACIÓN:",
-    sacredPromise: "PROMESA SAGRADA ETERNA",
-    promiseText: "Aquellos que recitan estas oraciones con fe verdadera y devoción sincera verán milagros extraordinarios e imposibles suceder en sus vidas. San Cipriano nunca abandona a sus devotos fieles y siempre recompensa a aquellos que lo honran con amor verdadero.",
-    preparationSteps: [
-      "Enciende una vela blanca o dorada con reverencia",
-      "Encuentra un lugar tranquilo y sagrado",
-      "Ten una imagen de San Cipriano cerca",
-      "Respira profundamente 7 veces para purificar",
-      "Concéntrate completamente en tu petición"
-    ],
-    prayerSteps: [
-      "Recita en voz alta con emoción verdadera",
-      "Visualiza intensamente tu petición siendo cumplida",
-      "Mantén fe absoluta e inquebrantable",
-      "Agradece como si ya hubieras recibido el milagro",
-      "Siente la presencia poderosa de San Cipriano"
-    ],
-    prayers: {
-      protection: {
-        title: "Oración de Protección Suprema",
-        category: "Protección Divina Absoluta",
-        purpose: "Protección total contra todas las adversidades, energías negativas y ataques espirituales",
-        benefits: ["Escudo espiritual impenetrable", "Aleja toda envidia y mal de ojo", "Protección familiar completa y eterna"],
-        instructions: "Recita con una vela blanca encendida, de mañana o de noche, con total fe y devoción."
-      },
-      prosperity: {
-        title: "Oración de Prosperidad Infinita",
-        category: "Riqueza y Abundancia Extrema",
-        purpose: "Atracción de riqueza extrema, abundancia sin límites y oportunidades de oro",
-        benefits: ["Riqueza multiplicada exponencialmente", "Oportunidades de oro surgen constantemente", "Abundancia en todas las áreas de la vida"],
-        instructions: "Recita diariamente por la mañana con una vela dorada, visualizando tu prosperidad."
-      },
-      power: {
-        title: "Oración del Poder Supremo",
-        category: "Poder Personal y Autoridad",
-        purpose: "Desarrollo de poder personal, autoridad absoluta e influencia mundial",
-        benefits: ["Autoridad suprema sobre todas las situaciones", "Influencia mundial y reconocimiento", "Poder de manifestación instantánea"],
-        instructions: "Recita en lugar reservado, con 7 velas doradas, concentrándote en tu poder interior."
-      },
-      love: {
-        title: "Oración del Amor Verdadero",
-        category: "Amor y Relaciones Perfectas",
-        purpose: "Atracción del amor verdadero, relaciones perfectas y unión eterna",
-        benefits: ["Amor verdadero y duradero", "Relación de los sueños realizada", "Unión sagrada y eterna"],
-        instructions: "Recita con dos velas rojas encendidas, pensando en la persona amada o en el amor que deseas."
-      },
-      healing: {
-        title: "Oración de Curación Milagrosa",
-        category: "Salud Perfecta y Curación Divina",
-        purpose: "Curación completa de todas las enfermedades, salud perfecta y vitalidad extrema",
-        benefits: ["Curación total y definitiva", "Salud radiante y perfecta", "Vitalidad extrema y duradera"],
-        instructions: "Recita con una vela blanca, tocando la parte del cuerpo que necesita curación."
-      },
-      fame: {
-        title: "Oración de Fama Mundial",
-        category: "Éxito Global y Reconocimiento",
-        purpose: "Alcanzar fama mundial, reconocimiento global e influencia planetaria",
-        benefits: ["Fama internacional garantizada", "Reconocimiento mundial en tu área", "Influencia global positiva"],
-        instructions: "Recita con 5 velas doradas en formato de estrella, visualizando tu éxito mundial."
-      }
-    }
-  },
-  
   fr: {
     title: "PRIÈRES SACRÉES SUPRÊMES",
     subtitle: "MOTS DE POUVOIR INFINI",
@@ -1325,7 +1165,17 @@ const useLanguage = () => {
     return translations[language]?.[key] || translations.pt[key] || key;
   };
   
-  return { language, changeLanguage, t };
+  // Function to get deeply nested prayer benefits
+  const getPrayerBenefits = (prayerType: string) => {
+    return translations[language]?.prayers?.[prayerType]?.benefits || translations.pt.prayers[prayerType]?.benefits || [];
+  };
+  
+  // Function to get deeply nested prayer data
+  const getPrayerData = (prayerType: string, field: string) => {
+    return translations[language]?.prayers?.[prayerType]?.[field] || translations.pt.prayers[prayerType]?.[field] || '';
+  };
+  
+  return { language, changeLanguage, t, getPrayerBenefits, getPrayerData };
 };
 
 const LanguageSelector = ({ language, onLanguageChange }: { language: string, onLanguageChange: (lang: string) => void }) => {
@@ -1406,19 +1256,19 @@ interface Prayer {
 }
 
 export default function Prayers() {
-  const { language, changeLanguage, t } = useLanguage();
+  const { language, changeLanguage, t, getPrayerBenefits, getPrayerData } = useLanguage();
   const [selectedPrayer, setSelectedPrayer] = useState<Prayer | null>(null);
   const [isReading, setIsReading] = useState(false);
 
   const prayers: Prayer[] = [
     {
       id: '1',
-      title: t('prayers.protection.title'),
-      category: t('prayers.protection.category'),
-      purpose: t('prayers.protection.purpose'),
+      title: getPrayerData('protection', 'title'),
+      category: getPrayerData('protection', 'category'),
+      purpose: getPrayerData('protection', 'purpose'),
       power: 98,
-      benefits: t('prayers.protection.benefits'),
-      instructions: t('prayers.protection.instructions'),
+      benefits: getPrayerBenefits('protection'),
+      instructions: getPrayerData('protection', 'instructions'),
       text: `Glorioso São Cipriano, grande mago e protetor supremo de todos os necessitados,
 
 Invoco vosso poder infinito e ancestral para que me protejais de todos os males, visíveis e invisíveis, conhecidos e desconhecidos, presentes e futuros.
@@ -1441,12 +1291,12 @@ c🔱 PODER INFINITO c🔱`
     },
     {
       id: '2',
-      title: t('prayers.prosperity.title'),
-      category: t('prayers.prosperity.category'),
-      purpose: t('prayers.prosperity.purpose'),
+      title: getPrayerData('prosperity', 'title'),
+      category: getPrayerData('prosperity', 'category'),
+      purpose: getPrayerData('prosperity', 'purpose'),
       power: 99,
-      benefits: t('prayers.prosperity.benefits'),
-      instructions: t('prayers.prosperity.instructions'),
+      benefits: getPrayerBenefits('prosperity'),
+      instructions: getPrayerData('prosperity', 'instructions'),
       text: `Poderoso São Cipriano, senhor supremo da magia ancestral e da transformação radical,
 
 Venho humildemente em vossa presença sagrada para solicitar vossa benção de prosperidade infinita e abundância extrema em todos os aspectos de minha vida.
@@ -1471,12 +1321,12 @@ c🔱 RIQUEZA INFINITA c🔱 Assim seja para sempre! Amém.`
     },
     {
       id: '3',
-      title: t('prayers.power.title'),
-      category: t('prayers.power.category'),
-      purpose: t('prayers.power.purpose'),
+      title: getPrayerData('power', 'title'),
+      category: getPrayerData('power', 'category'),
+      purpose: getPrayerData('power', 'purpose'),
       power: 100,
-      benefits: t('prayers.power.benefits'),
-      instructions: t('prayers.power.instructions'),
+      benefits: getPrayerBenefits('power'),
+      instructions: getPrayerData('power', 'instructions'),
       text: `Supremo São Cipriano, mestre absoluto de todos os mistérios do universo,
 
 Concedei-me uma porção generosa de vosso poder infinito e ancestral para que eu possa transformar minha realidade completamente e definitivamente.
@@ -1503,12 +1353,12 @@ c🔱 PODER SUPREMO c🔱 Assim seja para sempre e eternamente! Amém.`
     },
     {
       id: '4',
-      title: t('prayers.love.title'),
-      category: t('prayers.love.category'),
-      purpose: t('prayers.love.purpose'),
+      title: getPrayerData('love', 'title'),
+      category: getPrayerData('love', 'category'),
+      purpose: getPrayerData('love', 'purpose'),
       power: 95,
-      benefits: t('prayers.love.benefits'),
-      instructions: t('prayers.love.instructions'),
+      benefits: getPrayerBenefits('love'),
+      instructions: getPrayerData('love', 'instructions'),
       text: `Amado São Cipriano, que conheceu o amor verdadeiro e eterno com Santa Justina,
 
 Intercedei por mim para que eu encontre o amor verdadeiro e perfeito da minha vida, aquele que transformará meu coração para sempre.
@@ -1533,12 +1383,12 @@ c🔱 AMOR ETERNO c🔱 Assim seja para sempre! Amém.`
     },
     {
       id: '5',
-      title: t('prayers.healing.title'),
-      category: t('prayers.healing.category'),
-      purpose: t('prayers.healing.purpose'),
+      title: getPrayerData('healing', 'title'),
+      category: getPrayerData('healing', 'category'),
+      purpose: getPrayerData('healing', 'purpose'),
       power: 97,
-      benefits: t('prayers.healing.benefits'),
-      instructions: t('prayers.healing.instructions'),
+      benefits: getPrayerBenefits('healing'),
+      instructions: getPrayerData('healing', 'instructions'),
       text: `Misericordioso São Cipriano, grande curador de corpos, mentes e almas,
 
 Invoco vosso poder supremo de cura para que me concedais saúde perfeita e completa em todos os aspectos do meu ser.
@@ -1563,12 +1413,12 @@ c🔱 CURA DIVINA c🔱 Assim seja para sempre! Amém.`
     },
     {
       id: '6',
-      title: t('prayers.fame.title'),
-      category: t('prayers.fame.category'),
-      purpose: t('prayers.fame.purpose'),
+      title: getPrayerData('fame', 'title'),
+      category: getPrayerData('fame', 'category'),
+      purpose: getPrayerData('fame', 'purpose'),
       power: 96,
-      benefits: t('prayers.fame.benefits'),
-      instructions: t('prayers.fame.instructions'),
+      benefits: getPrayerBenefits('fame'),
+      instructions: getPrayerData('fame', 'instructions'),
       text: `Glorioso São Cipriano, que é conhecido, venerado e respeitado em todo o mundo,
 
 Concedei-me fama mundial e reconhecimento global extraordinário em minha área de atuação e expertise.
