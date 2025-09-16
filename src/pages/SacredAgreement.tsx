@@ -328,17 +328,17 @@ const translations = {
   
   de: {
     title: "HEILIGE VEREINBARUNG MIT HEILIGEM CYPRIAN",
-    subtitle: "Das Mächtigste Ritual Um Ihr Leben Für Immer Zu Verwandeln",
-    description: "Die Heilige Vereinbarung ist das mächtigste Ritual, das existiert, um sich mit Heiligem Cyprian zu verbinden. Millionen von Menschen haben ihre Leben durch dieses ahnengerechte Ritual radikal verwandelt. Bereiten Sie sich auf die außergewöhnlichste Veränderung Ihres Lebens vor.",
+    subtitle: "Das Mächtigste Rituell Um Ihr Leben Für Immer Zu Verwandeln",
+    description: "Die Heilige Vereinbarung ist das mächtigste Rituell, das existiert, um sich mit Heiligem Cyprian zu verbinden. Millionen von Menschen haben ihre Leben durch dieses ahnengerechte Rituell radikal verwandelt. Bereiten Sie sich auf die außergewöhnlichste Veränderung Ihres Lebens vor.",
     
     warningTitle: "⚠️ EXTREM WICHTIGE AUFMERKSAMKEIT ⚠️",
     warnings: [
-      "Dies ist ein echtes heiliges Ritual mit Heiligem Cyprian, kein Scherz oder Fantasie",
+      "Dies ist ein echtes heiliges Rituell mit Heiligem Cyprian, kein Scherz oder Fantasie",
       "Sie müssen 100% Ihren Versprechen verpflichtet sein, bevor Sie beginnen",
       "Heiliger Cyprian erfüllt immer seinen Teil, verlangt aber dasselbe von Ihnen",
       "Brechen Sie niemals Ihre Versprechen an ihn, nachdem Sie Wunder erhalten haben",
       "Diese Vereinbarung ist fürs Leben, nicht temporär",
-      "Tun Sie es nur, wenn Sie wahren Glauben und aufrichtige Hingabe haben"
+      "Tun Sie es nur, wenn Sie wahren Glauben und aufrichtige Toewijding haben"
     ],
     
     steps: {
@@ -976,14 +976,14 @@ const translations = {
   
   nl: {
     title: "HEILIGE OVEREENKOMST MET HEILIGE CYPRIAAN",
-    subtitle: "Het Krachtigste Ritueel Om Uw Leven Voor Altijd Te Transformeren",
+    subtitle: "Het Krachtigste Ritueel Om Uw Leven Voor Altijd Te Verwandelen",
     description: "De Heilige Overeenkomst is het krachtigste ritueel dat bestaat om te verbinden met Heilige Cypriaan. Miljoenen mensen hebben hun leven radicaal getransformeerd door dit voorouderlijke ritueel. Bereid u voor op de meest buitengewone verandering van uw leven.",
     
     warningTitle: "⚠️ EXTREEM BELANGRIJKE AANDACHT ⚠️",
     warnings: [
       "Dit is een echt heilig ritueel met Heilige Cypriaan, geen grap of fantasie",
       "U moet 100% toegewijd zijn aan uw beloften voordat u begint",
-      "Heilige Cypriaan vervult altijd zijn deel, maar eist hetzelfde van u",
+      "Heilige Cypriaan vervult altijd zijn deel, verlangt maar dasselbe van u",
       "Breek nooit uw beloften aan hem nadat u wonderen heeft ontvangen",
       "Deze overeenkomst is voor het leven, niet tijdelijk",
       "Doe het alleen als u ware geloof en oprechte toewijding heeft"
@@ -1353,86 +1353,86 @@ Sou vosso devoto fiel para todo o sempre.
 Assim seja, com vosso poder infinito e eterno.
 c🔱 Amém c🔱`;
 
-const testimonials = [
-  {
-    name: "Roberto Silva",
-    period: (
-      language === "en"
-        ? "3 months after agreement"
-        : language === "es"
-          ? "3 meses después del acuerdo"
-          : "3 meses após o acordo"
-    ),
-    story: (
-      language === "en"
-        ? "I made my agreement asking to get out of $500k debt. In 3 months I not only paid everything off but my company started earning $2 million per month. Saint Cyprian delivered beyond what I asked!"
-        : language === "es"
-          ? "Hice mi acuerdo pidiendo salir de las deudas de $500k. En 3 meses no solo pagué todo sino que mi empresa comenzó a ganar $2 millones por mes. ¡San Cipriano cumplió más allá de lo que pedí!"
-          : "Fiz meu acordo pedindo para sair das dívidas de R$ 500 mil. Em 3 meses não só quitei tudo como minha empresa começou a faturar R$ 2 milhões por mês. São Cipriano cumpriu além do que pedi!"
-    ),
-    result: (
-      language === "en"
-        ? "From $500k negative to $2M positive monthly"
-        : language === "es"
-          ? "De $500k negativos a $2M positivos mensuales"
-          : "Saiu de R$ 500k negativos para R$ 2M positivos mensais"
-    )
-  },
-  {
-    name: "Maria Fernanda",
-    period: (
-      language === "en"
-        ? "1 month after agreement"
-        : language === "es"
-          ? "1 mes después del acuerdo"
-          : "1 mês após o acordo"
-    ),
-    story: (
-      language === "en"
-        ? "I had terminal cancer. Doctors gave me 2 months to live. I made the agreement with total faith. In 1 month the exams showed the tumor had completely disappeared. Inexplicable miracle!"
-        : language === "es"
-          ? "Tenía cáncer terminal. Los médicos me dieron 2 meses de vida. Hice el acuerdo con fe total. En 1 mes los exámenes mostraron que el tumor había desaparecido completamente. ¡Milagro inexplicable!"
-          : "Estava com câncer terminal. Os médicos me davam 2 meses de vida. Fiz o acordo com total fé. Em 1 mês os exames mostraram que o tumor havia desaparecido completamente. Milagre inexplicável!"
-    ),
-    result: (
-      language === "en"
-        ? "Complete cure from terminal cancer in 30 days"
-        : language === "es"
-          ? "Cura completa de cáncer terminal en 30 días"
-          : "Cura completa de câncer terminal em 30 dias"
-    )
-  },
-  {
-    name: "Carlos Santos",
-    period: (
-      language === "en"
-        ? "6 months after agreement"
-        : language === "es"
-          ? "6 meses después del acuerdo"
-          : "6 meses após o acordo"
-    ),
-    story: (
-      language === "en"
-        ? "I was completely unknown. I asked Saint Cyprian to give me worldwide fame. Today I have 80 million followers on social media and millionaire contracts. He transformed my life!"
-        : language === "es"
-          ? "Era completamente desconocido. Le pedí a San Cipriano que me diera fama mundial. Hoy tengo 80 millones de seguidores en redes sociales y contratos millonarios. ¡Transformó mi vida!"
-          : "Era completamente desconhecido. Pedi para São Cipriano me dar fama mundial. Hoje tenho 80 milhões de seguidores nas redes sociais e contratos milionários. Ele transformou minha vida!"
-    ),
-    result: (
-      language === "en"
-        ? "From anonymous to 80 million global followers"
-        : language === "es"
-          ? "De anónimo a 80 millones de seguidores globales"
-          : "De anônimo a 80 milhões de seguidores globais"
-    )
-  }
-];
-
-
 export default function SacredAgreement() {
   const { language, changeLanguage, t } = useLanguage();
   const [currentStep, setCurrentStep] = useState(1);
   const [completedSteps, setCompletedSteps] = useState<number[]>([]);
+
+  // Create testimonials inside the component where language is available
+  const testimonials = [
+    {
+      name: "Roberto Silva",
+      period: (
+        language === "en"
+          ? "3 months after agreement"
+          : language === "es"
+            ? "3 meses después del acuerdo"
+            : "3 meses após o acordo"
+      ),
+      story: (
+        language === "en"
+          ? "I made my agreement asking to get out of $500k debt. In 3 months I not only paid everything off but my company started earning $2 million per month. Saint Cyprian delivered beyond what I asked!"
+          : language === "es"
+            ? "Hice mi acuerdo pidiendo salir de las deudas de $500k. En 3 meses no solo pagué todo sino que mi empresa comenzó a ganar $2 millones por mes. ¡San Cipriano cumplió más allá de lo que pedí!"
+            : "Fiz meu acordo pedindo para sair das dívidas de R$ 500 mil. Em 3 meses não só quitei tudo como minha empresa começou a faturar R$ 2 milhões por mês. São Cipriano cumpriu além do que pedi!"
+      ),
+      result: (
+        language === "en"
+          ? "From $500k negative to $2M positive monthly"
+          : language === "es"
+            ? "De $500k negativos a $2M positivos mensuales"
+            : "Saiu de R$ 500k negativos para R$ 2M positivos mensais"
+      )
+    },
+    {
+      name: "Maria Fernanda",
+      period: (
+        language === "en"
+          ? "1 month after agreement"
+          : language === "es"
+            ? "1 mes después del acuerdo"
+            : "1 mês após o acordo"
+      ),
+      story: (
+        language === "en"
+          ? "I had terminal cancer. Doctors gave me 2 months to live. I made the agreement with total faith. In 1 month the exams showed the tumor had completely disappeared. Inexplicable miracle!"
+          : language === "es"
+            ? "Tenía cáncer terminal. Los médicos me dieron 2 meses de vida. Hice el acuerdo con fe total. En 1 mes los exámenes mostraron que el tumor había desaparecido completamente. ¡Milagro inexplicable!"
+            : "Estava com câncer terminal. Os médicos me davam 2 meses de vida. Fiz o acordo com total fé. Em 1 mês os exames mostraram que o tumor havia desaparecido completamente. Milagre inexplicável!"
+      ),
+      result: (
+        language === "en"
+          ? "Complete cure from terminal cancer in 30 days"
+          : language === "es"
+            ? "Cura completa de cáncer terminal en 30 días"
+            : "Cura completa de câncer terminal em 30 dias"
+      )
+    },
+    {
+      name: "Carlos Santos",
+      period: (
+        language === "en"
+          ? "6 months after agreement"
+          : language === "es"
+            ? "6 meses después del acuerdo"
+            : "6 meses após o acordo"
+      ),
+      story: (
+        language === "en"
+          ? "I was completely unknown. I asked Saint Cyprian to give me worldwide fame. Today I have 80 million followers on social media and millionaire contracts. He transformed my life!"
+          : language === "es"
+            ? "Era completamente desconocido. Le pedí a San Cipriano que me diera fama mundial. Hoy tengo 80 millones de seguidores en redes sociales y contratos millonarios. ¡Transformó mi vida!"
+            : "Era completamente desconhecido. Pedi para São Cipriano me dar fama mundial. Hoje tenho 80 milhões de seguidores nas redes sociais e contratos milionários. Ele transformou minha vida!"
+      ),
+      result: (
+        language === "en"
+          ? "From anonymous to 80 million global followers"
+          : language === "es"
+            ? "De anónimo a 80 millones de seguidores globales"
+            : "De anônimo a 80 milhões de seguidores globais"
+      )
+    }
+  ];
 
   const completeStep = (stepId: number) => {
     if (!completedSteps.includes(stepId)) {
