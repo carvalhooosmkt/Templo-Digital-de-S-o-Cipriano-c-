@@ -183,121 +183,62 @@ const translations = {
     }
   },
   
-  en: {
-    title: "YOUR SPIRITUAL PROFILE",
-    subtitle: "Faithful Devotee of Saint Cyprian",
-    loading: "Loading spiritual progress...",
-    currentLevel: "CURRENT DEVOTION LEVEL",
-    spiritual: "Spiritual",
-    pointsToNext: "points to next level",
-    continueDesc: "Continue your daily devotion to evolve spiritually and receive greater blessings",
-    sacredRituals: "Sacred Rituals",
-    prayersRecited: "Prayers Recited",
-    devotionDays: "Devotion Days",
-    faithPoints: "Faith Points",
-    sacredAchievements: "SACRED ACHIEVEMENTS",
-    prayerReminders: "SACRED PRAYER REMINDERS",
-    reminderDesc: "Set up daily reminders to never forget to connect with Saint Cyprian. He will call you at the sacred time for your prayers.",
-    prayerTime: "Daily Prayer Time:",
-    activateDaily: "ACTIVATE DAILY SACRED CALL",
-    remindersActive: "REMINDERS ACTIVE",
-    remindersDesc: "Saint Cyprian will call you every day at {time} for your sacred prayer",
-    disableReminders: "Disable Reminders",
-    templeSettings: "TEMPLE SETTINGS",
-    shareJourney: "Share Spiritual Journey",
-    shareDesc: "Spread Saint Cyprian's word and inspire others",
-    resetProgress: "Reset Spiritual Progress",
-    resetDesc: "Start a new journey from scratch",
-    divineMessage: "PERSONAL DIVINE MESSAGE",
-    personalMessage: "Your sincere devotion touches Saint Cyprian's heart. Continue your spiritual journey and see how your life transforms each day. The Grand Mage abundantly rewards those who persevere in the path of true faith and sincere devotion.",
-    achievementsUnlocked: "Achievements Unlocked",
-    memberFor: "Member for {days} days",
-    nextLevel: "Next level: {points} points",
-    shareText: "I'm on my spiritual journey with Saint Cyprian!",
-    level: "Level",
-    rituals: "Rituals",
-    prayers: "Prayers",
-    activeDays: "Active days",
+  fr: {
+    title: "VOTRE PROFIL SPIRITUEL",
+    subtitle: "Fidèle Dévot de Saint Cyprien",
+    loading: "Chargement du progrès spirituel...",
+    currentLevel: "NIVEAU DE DÉVOTION ACTUEL",
+    spiritual: "Spirituel",
+    pointsToNext: "points pour le niveau suivant",
+    continueDesc: "Continuez votre dévotion quotidienne pour évoluer spirituellement et recevoir de plus grandes bénédictions",
+    sacredRituals: "Rituels Sacrés",
+    prayersRecited: "Prières Récitées",
+    devotionDays: "Jours de Dévotion",
+    faithPoints: "Points de Foi",
+    sacredAchievements: "RÉALISATIONS SACRÉES",
+    prayerReminders: "RAPPELS SACRÉS DE PRIÈRE",
+    reminderDesc: "Configurez des rappels quotidiens pour ne jamais oublier de vous connecter avec Saint Cyprien. Il vous appellera à l'heure sacrée pour vos prières.",
+    prayerTime: "Heure de Prière Quotidienne :",
+    activateDaily: "ACTIVER L'APPEL SACRÉ QUOTIDIEN",
+    remindersActive: "RAPPELS ACTIFS",
+    remindersDesc: "Saint Cyprien vous appellera tous les jours à {time} pour votre prière sacrée",
+    disableReminders: "Désactiver les Rappels",
+    templeSettings: "PARAMÈTRES DU TEMPLE",
+    shareJourney: "Partager le Voyage Spirituel",
+    shareDesc: "Répandez la parole de Saint Cyprien et inspirez les autres",
+    resetProgress: "Réinitialiser le Progrès Spirituel",
+    resetDesc: "Commencer un nouveau voyage à partir de zéro",
+    divineMessage: "MESSAGE DIVIN PERSONNEL",
+    personalMessage: "Votre dévotion sincère touche le cœur de Saint Cyprien. Continuez votre voyage spirituel et voyez comment votre vie se transforme chaque jour. Le Grand Mage récompense abondamment ceux qui persévèrent dans le chemin de la vraie foi et de la dévotion sincère.",
+    achievementsUnlocked: "Réalisations Débloquées",
+    memberFor: "Membre depuis {days} jours",
+    nextLevel: "Niveau suivant : {points} points",
+    shareText: "Je suis dans mon voyage spirituel avec Saint Cyprien !",
+    level: "Niveau",
+    rituals: "Rituels",
+    prayers: "Prières",
+    activeDays: "Jours actifs",
     points: "Points",
-    visitText: "Come discover the transforming power of the Grand Mage:",
-    shareTitle: "My Journey with Saint Cyprian",
-    shareCopied: "Your progress has been copied! Paste on WhatsApp or wherever you want to spread Saint Cyprian's word.",
-    resetConfirm: "Are you sure you want to reset all your spiritual progress? This action cannot be undone!",
-    resetSuccess: "Your progress has been reset. Start a new spiritual journey!",
-    reminderSuccess: "Prayer reminder set successfully! Saint Cyprian will call you daily.",
-    reminderDenied: "Notification permission denied. Enable notifications to receive sacred calls.",
-    browserNotSupported: "Your browser doesn't support notifications. Use a modern browser for sacred reminders.",
-    reminderDisabled: "Prayer reminders disabled.",
-    notificationTitle: "Sacred Prayer Moment",
-    notificationBody: "Saint Cyprian is waiting for your daily prayer. Strengthen your divine connection now!",
+    visitText: "Venez découvrir le pouvoir transformateur du Grand Mage :",
+    shareTitle: "Mon Voyage avec Saint Cyprien",
+    shareCopied: "Votre progrès a été copié ! Collez sur WhatsApp ou où vous voulez répandre la parole de Saint Cyprien.",
+    resetConfirm: "Êtes-vous sûr de vouloir réinitialiser tout votre progrès spirituel ? Cette action ne peut pas être annulée !",
+    resetSuccess: "Votre progrès a été réinitialisé. Commencez un nouveau voyage spirituel !",
+    reminderSuccess: "Rappel de prière configuré avec succès ! Saint Cyprien vous appellera quotidiennement.",
+    reminderDenied: "Permission de notification refusée. Activez les notifications pour recevoir les appels sacrés.",
+    browserNotSupported: "Votre navigateur ne supporte pas les notifications. Utilisez un navigateur moderne pour les rappels sacrés.",
+    reminderDisabled: "Rappels de prière désactivés.",
+    notificationTitle: "Moment Sacré de Prière",
+    notificationBody: "Saint Cyprien attend votre prière quotidienne. Renforcez votre connexion divine maintenant !",
     achievements: {
-      firstPrayer: { name: "First Prayer", desc: "Recited your first sacred prayer" },
-      firstRitual: { name: "First Ritual", desc: "Completed your first ritual" },
-      dedicatedDevotee: { name: "Dedicated Devotee", desc: "5 prayers recited" },
-      weeklyFaithful: { name: "Weekly Faithful", desc: "7 consecutive days of devotion" },
-      ritualMaster: { name: "Ritual Master", desc: "10 rituals completed" },
-      prayerWarrior: { name: "Prayer Warrior", desc: "25 prayers recited" },
-      sacredMonth: { name: "Sacred Month", desc: "30 days of devotion" },
-      grandMaster: { name: "Grand Master", desc: "Maximum level reached" }
-    }
-  },
-  
-  es: {
-    title: "TU PERFIL ESPIRITUAL",
-    subtitle: "Devoto Fiel de San Cipriano",
-    loading: "Cargando progreso espiritual...",
-    currentLevel: "NIVEL DE DEVOCIÓN ACTUAL",
-    spiritual: "Espiritual",
-    pointsToNext: "puntos para el siguiente nivel",
-    continueDesc: "Continúa tu devoción diaria para evolucionar espiritualmente y recibir bendiciones mayores",
-    sacredRituals: "Rituales Sagrados",
-    prayersRecited: "Oraciones Recitadas",
-    devotionDays: "Días de Devoción",
-    faithPoints: "Puntos de Fe",
-    sacredAchievements: "LOGROS SAGRADOS",
-    prayerReminders: "RECORDATORIOS SAGRADOS DE ORACIÓN",
-    reminderDesc: "Configura recordatorios diarios para nunca olvidar conectarte con San Cipriano. Te llamará en el horario sagrado para tus oraciones.",
-    prayerTime: "Hora de Oración Diaria:",
-    activateDaily: "ACTIVAR LLAMADA SAGRADA DIARIA",
-    remindersActive: "RECORDATORIOS ACTIVOS",
-    remindersDesc: "San Cipriano te llamará todos los días a las {time} para tu oración sagrada",
-    disableReminders: "Desactivar Recordatorios",
-    templeSettings: "CONFIGURACIONES DEL TEMPLO",
-    shareJourney: "Compartir Jornada Espiritual",
-    shareDesc: "Difunde la palabra de San Cipriano e inspira a otros",
-    resetProgress: "Reiniciar Progreso Espiritual",
-    resetDesc: "Comenzar una nueva jornada desde cero",
-    divineMessage: "MENSAJE DIVINO PERSONAL",
-    personalMessage: "Tu devoción sincera toca el corazón de San Cipriano. Continúa tu jornada espiritual y ve cómo tu vida se transforma cada día. El Gran Mago recompensa abundantemente a aquellos que perseveran en el camino de la fe verdadera y devoción sincera.",
-    achievementsUnlocked: "Logros Desbloqueados",
-    memberFor: "Miembro por {days} días",
-    nextLevel: "Siguiente nivel: {points} puntos",
-    shareText: "¡Estoy en mi jornada espiritual con San Cipriano!",
-    level: "Nivel",
-    rituals: "Rituales",
-    prayers: "Oraciones",
-    activeDays: "Días activos",
-    points: "Puntos",
-    visitText: "Ven a conocer el poder transformador del Gran Mago:",
-    shareTitle: "Mi Jornada con San Cipriano",
-    shareCopied: "¡Tu progreso ha sido copiado! Pega en WhatsApp o donde desees para difundir la palabra de San Cipriano.",
-    resetConfirm: "¿Estás seguro de que quieres reiniciar todo tu progreso espiritual? ¡Esta acción no se puede deshacer!",
-    resetSuccess: "Tu progreso ha sido reiniciado. ¡Comienza una nueva jornada espiritual!",
-    reminderSuccess: "¡Recordatorio de oración configurado exitosamente! San Cipriano te llamará diariamente.",
-    reminderDenied: "Permiso de notificación denegado. Activa las notificaciones para recibir llamadas sagradas.",
-    browserNotSupported: "Tu navegador no soporta notificaciones. Usa un navegador moderno para recordatorios sagrados.",
-    reminderDisabled: "Recordatorios de oración desactivados.",
-    notificationTitle: "Momento Sagrado de Oración",
-    notificationBody: "San Cipriano está esperando tu oración diaria. ¡Fortalece tu conexión divina ahora!",
-    achievements: {
-      firstPrayer: { name: "Primera Oración", desc: "Recitó su primera oración sagrada" },
-      firstRitual: { name: "Primer Ritual", desc: "Completó su primer ritual" },
-      dedicatedDevotee: { name: "Devoto Dedicado", desc: "5 oraciones recitadas" },
-      weeklyFaithful: { name: "Fiel Semanal", desc: "7 días consecutivos de devoción" },
-      ritualMaster: { name: "Maestro de Rituales", desc: "10 rituales completados" },
-      prayerWarrior: { name: "Guerrero de Oración", desc: "25 oraciones recitadas" },
-      sacredMonth: { name: "Mes Sagrado", desc: "30 días de devoción" },
-      grandMaster: { name: "Gran Maestro", desc: "Nivel máximo alcanzado" }
+      firstPrayer: { name: "Première Prière", desc: "Récité votre première prière sacrée" },
+      firstRitual: { name: "Premier Rituel", desc: "Complété votre premier rituel" },
+      dedicatedDevotee: { name: "Dévot Dévoué", desc: "5 prières récitées" },
+      weeklyFaithful: { name: "Fidèle Hebdomadaire", desc: "7 jours consécutifs de dévotion" },
+      ritualMaster: { name: "Maître des Rituels", desc: "10 rituels complétés" },
+      prayerWarrior: { name: "Guerrier de la Prière", desc: "25 prières récitées" },
+      sacredMonth: { name: "Mois Sacré", desc: "30 jours de dévotion" },
+      grandMaster: { name: "Grand Maître", desc: "Niveau maximum atteint" }
     }
   },
   
@@ -1080,7 +1021,7 @@ export default function Profile() {
           const timeToReminder = scheduledTime.getTime() - now.getTime();
           
           setTimeout(() => {
-            new Notification(`c🔱 ${t('notificationTitle')}`, {
+            new Notification(`🔱 ${t('notificationTitle')}`, {
               body: t('notificationBody'),
               icon: '/favicon.ico',
               badge: '/favicon.ico'
@@ -1114,7 +1055,7 @@ export default function Profile() {
   };
 
   const shareProgress = async () => {
-    const text = `c🔱 ${t('shareText')}
+    const text = `🔱 ${t('shareText')}
 
 ✨ ${t('level')}: ${progress.devotionLevel}
 🔥 ${t('rituals')}: ${progress.ritualsCompleted}
@@ -1127,7 +1068,7 @@ ${t('visitText')} ${window.location.origin}`;
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `c🔱 ${t('shareTitle')}`,
+          title: `🔱 ${t('shareTitle')}`,
           text: text,
         });
       } catch (err) {
@@ -1163,7 +1104,8 @@ ${t('visitText')} ${window.location.origin}`;
 
   const getAchievementData = (achievementId: string) => {
     const achievement = achievementsList.find(ach => ach.id === achievementId);
-    const translation = t(`achievements.${achievementId.replace('-', '')}`);
+    const achievementKey = achievementId.replace(/-/g, '');
+    const translation = t(`achievements.${achievementKey}`);
     return {
       ...achievement,
       name: translation.name,
@@ -1189,7 +1131,7 @@ ${t('visitText')} ${window.location.origin}`;
       {/* Header */}
       <div className="text-center py-8 md:py-12 px-4 border-b border-gold-500/30">
         <div className="text-5xl md:text-6xl text-gold-400 mb-4 mystical-glow animate-glow-text">
-          c🔱
+          🔱
         </div>
         <h1 className="text-2xl md:text-3xl font-black text-gold-400 mb-2 tracking-wide sacred-text">
           {t('title')}
